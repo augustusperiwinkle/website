@@ -1,6 +1,6 @@
 const React = require('react');
 
-export class HomePage extends React.Component {
+export class Contact extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -17,11 +17,7 @@ export class HomePage extends React.Component {
   render() {
     return (
       <div className="fullPageContainer">
-        <h1>Welcome to the Derek Louis portfolio site!!!</h1>
-        <button type="button" id="counterButton" onClick={this.handleClick}>
-          Like this page!
-        </button>
-        <h3>Likes: {this.state.counter}</h3>
+        <h1>This is the contact page!</h1>
       </div>
     );
   }

@@ -1,5 +1,9 @@
+body {
+  margin: 0px;
+}
+
 h1 {
-  color: green;
+  color: rgb(124, 124, 195);
 }
 
 #counterButton {
@@ -8,4 +12,30 @@ h1 {
   padding: 10px;
   background-color: rgb(173, 210, 197);
   cursor: pointer;
+  outline: none;
+}
+
+#counterButton:hover {
+  transform: scale(1.05);
+}
+
+#navBar {
+  height: 75px;
+  width: 100vw;
+  background-color: rgb(123, 123, 123);
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px;
+  top: 0;
+}
+
+.fullPageContainer {
+  margin: 100px 0px 0px 50px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
 }
