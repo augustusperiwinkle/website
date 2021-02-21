@@ -19,7 +19,9 @@ export class HomePage extends React.Component {
     return (
       <div>
         <h1>Welcome to the Derek Louis portfolio site!!!</h1>
-        <button onClick={this.handleClick}>Like this page!</button>
+        <button id="counterButton" onClick={this.handleClick}>
+          Like this page!
+        </button>
         <h3>Likes: {this.state.counter}</h3>
       </div>
     );

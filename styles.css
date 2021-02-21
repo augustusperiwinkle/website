@@ -1,3 +1,11 @@
 h1 {
   color: green;
 }
+
+#counterButton {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  background-color: rgb(173, 210, 197);
+  cursor: pointer;
+}
