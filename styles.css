@@ -1,9 +1,14 @@
+/* font-family: 'Average', serif;
+font-family: 'Open Sans', sans-serif; */
+
 body {
   margin: 0px;
 }
 
 h1 {
   color: rgb(124, 124, 195);
+  margin: 22px 36px 22px 36px;
+  text-align: center;
 }
 
 #counterButton {
@@ -19,23 +24,256 @@ h1 {
   transform: scale(1.05);
 }
 
+#textAndImage {
+  margin: 50px 0px 50px 0px;
+  width: 50%;
+  max-width: 1050px;
+}
+
+#aboutPhoto {
+  width: 400px;
+  height: auto;
+  border-radius: 50%;
+  float: left;
+  margin: 0px 50px 50px 0px;
+}
+
+.homePageText {
+  margin: 0px 50px 0px 0px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+#navBarWrap {
+  width: 100vw;
+  position: fixed;
+  margin: 0px;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes toWhite {
+  0% {
+    background-color: #ddd;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+
+.white {
+  background-color: white;
+  animation-name: toWhite;
+  animation-duration: 0.75s;
+}
+
+@keyframes toGray {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #ddd;
+  }
+}
+
+.gray {
+  background-color: #ddd;
+  animation-name: toGray;
+  animation-duration: 0.75s;
+}
+
 #navBar {
   height: 75px;
-  width: 100vw;
-  background-color: rgb(123, 123, 123);
-  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0px;
-  top: 0;
+  max-width: 1200px;
 }
 
 .fullPageContainer {
-  margin: 100px 0px 0px 50px;
+  margin: 100px 0px 0px 0px;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .link {
   text-decoration: none;
   color: black;
+  font-family: 'Open Sans', sans-serif;
+  transition-duration: 0.25s;
+}
+
+.logoLink {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: rgb(220, 137, 20);
+}
+
+.SMLink {
+  text-decoration: none;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  margin: 25px 0px 0px 25px;
+  transition-duration: 0.25s;
+}
+
+.SMLink:hover {
+  color: rgb(220, 137, 20);
+}
+
+#SMLinkBox {
+  margin: 100px 0px 0px 50px;
+}
+
+#name {
+  font-family: 'Average', serif;
+  font-size: 36px;
+}
+
+.menu-btn {
+  display: none;
+  visibility: hidden;
+  z-index: 3;
+}
+
+#slideMenuWrapper {
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  display: none;
+  visibility: hidden;
+}
+
+.menuHidden {
+  display: none;
+  visibility: hidden;
+  right: 100%;
+}
+
+@keyframes slideIn {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+.slideOut {
+  animation-name: slideOut;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+
+@keyframes slideOut {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: 100%;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.slideIn {
+  animation-name: slideIn;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+
+#filler {
+  background-color: rgba(233, 150, 122, 0.626);
+  width: 300px;
+  height: 2000px;
+}
+
+@media (max-width: 820px) {
+  #aboutPhoto {
+    width: 325px;
+  }
+}
+
+@media (max-width: 600px) {
+  #aboutPhoto {
+    width: 250px;
+  }
+
+  #slideMenuWrapper {
+    visibility: visible;
+    display: inline-flex;
+  }
+
+  .link {
+    display: none;
+    visibility: hidden;
+  }
+
+  .logoLink {
+    margin-right: auto;
+  }
+
+  .menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-right: auto;
+    margin-left: 15px;
+    display: inline-flex;
+    visibility: visible;
+  }
+  .menu-btn__burger {
+    width: 30px;
+    height: 4px;
+    background: #000;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #000;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-10px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(10px);
+  }
+  /* ANIMATION */
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
 }
