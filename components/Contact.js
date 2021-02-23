@@ -3,16 +3,9 @@ const React = require('react');
 export class Contact extends React.Component {
   constructor() {
     super();
-    this.state = {
-      counter: 0,
-    };
-    this.handleClick = this.handleClick.bind(this);
   }
-  handleClick() {
-    const current = this.state.counter;
-    this.setState({
-      counter: current + 1,
-    });
+  componentDidMount() {
+    window.scrollTo(0, 0);
   }
   render() {
     return (

@@ -4,6 +4,9 @@ export class About extends React.Component {
   constructor() {
     super();
   }
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="fullPageContainer">
