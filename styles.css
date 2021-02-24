@@ -366,6 +366,7 @@ h1 {
 
 #aboutTechTitle {
   margin-bottom: 25px;
+  font-size: 32px;
 }
 
 @media (max-width: 1200px) {
@@ -513,5 +514,8 @@ h1 {
   }
   #techContainer {
     padding: 10px 0px 10px 0px;
+  }
+  #aboutTechTitle {
+    font-size: 27px;
   }
 }
