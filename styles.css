@@ -500,11 +500,16 @@ h1 {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 575px) {
+  .techIconAbout {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 500px) {
   .techIconAbout {
     width: 30px;
     height: 30px;
-    margin: 20px;
   }
   #techContainer {
     padding: 10px 0px 10px 0px;
