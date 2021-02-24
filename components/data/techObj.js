@@ -39,6 +39,10 @@ export const techObj = {
     name: 'PostgreSQL',
     style: { color: '#336791' },
   },
+  sequelize: {
+    name: 'Sequelize',
+    style: { color: '#03AFEF' },
+  },
   react: {
     name: 'React',
     style: { color: '#61DAFB' },

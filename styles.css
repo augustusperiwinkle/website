@@ -340,7 +340,7 @@ h1 {
 
 #techContainer {
   width: 100%;
-  max-width: 675px;
+  max-width: 550px;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.051);
   margin: 0px 0px 36px 0px;
@@ -373,11 +373,6 @@ h1 {
     width: 80%;
     max-width: 650px;
   }
-
-  .techIconAbout {
-    width: 40px;
-    height: 40px;
-  }
 }
 
 @media (max-width: 1137px) {
@@ -406,12 +401,14 @@ h1 {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 670px) {
   .techIconAbout {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
   }
+}
 
+@media (max-width: 600px) {
   #aboutPhoto {
     width: 250px;
     float: none;
@@ -500,5 +497,16 @@ h1 {
   }
   .menu-btn.open .menu-btn__burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
+  }
+}
+
+@media (max-width: 450px) {
+  .techIconAbout {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+  }
+  #techContainer {
+    padding: 10px 0px 10px 0px;
   }
 }

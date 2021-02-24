@@ -93,6 +93,11 @@ export class About extends React.Component {
                 id="postgresql"
               />
               <img
+                src="../icons/sequelize.png"
+                className="techIconAbout"
+                id="sequelize"
+              />
+              <img
                 src="../icons/react.png"
                 className="techIconAbout"
                 id="react"
