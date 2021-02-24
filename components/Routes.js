@@ -10,14 +10,16 @@ const { ErrorPage } = require('./ErrorPage');
 export class Routes extends React.Component {
   render() {
     return (
-      <Switch>
-        <Redirect exact from="/" to="/home" />
-        <Route path="/home" component={HomePage} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route component={ErrorPage} />
-      </Switch>
+      <>
+        <Switch>
+          <Redirect exact from="/" to="/home" />
+          <Route path="/home" component={HomePage} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route component={ErrorPage} />
+        </Switch>
+      </>
     );
   }
 }

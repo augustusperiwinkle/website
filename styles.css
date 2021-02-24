@@ -31,6 +31,15 @@ h1 {
   max-width: 1050px;
 }
 
+#aboutContainer {
+  margin: 50px 0px 50px 0px;
+  width: 50%;
+  max-width: 1050px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #aboutPhoto {
   width: 400px;
   height: auto;
@@ -174,8 +183,8 @@ h1 {
   }
 }
 
-.slideOut {
-  animation-name: slideOut;
+.slideIn {
+  animation-name: slideIn;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-duration: 0.5s;
@@ -192,8 +201,8 @@ h1 {
   }
 }
 
-.slideIn {
-  animation-name: slideIn;
+.slideOut {
+  animation-name: slideOut;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-duration: 0.5s;
@@ -224,24 +233,42 @@ h1 {
   margin: 0px 50px 0px 50px;
 }
 
-#githubIcon {
+.gitHubIcon {
   color: black;
   transition-duration: 0.3s;
 }
 
-#githubIcon:hover {
+.gitHubIcon:hover {
   transform: scale(1.05);
   color: #7b2f93;
 }
 
-#linkedInIcon {
+.linkedInIcon {
   color: black;
   transition-duration: 0.3s;
 }
 
-#linkedInIcon:hover {
+.linkedInIcon:hover {
   transform: scale(1.05);
   color: #0077b5;
+}
+
+.emailIcon {
+  color: black;
+  transition-duration: 0.3s;
+}
+
+.emailIcon:hover {
+  transform: scale(1.05);
+  color: #ea4335;
+}
+
+.contactLink {
+  text-decoration: none;
+  margin: 25px 0px 50px 0px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
 }
 
 #videoMaster {
@@ -311,6 +338,48 @@ h1 {
   transform: scale(1.05);
 }
 
+#techContainer {
+  width: 100%;
+  max-width: 675px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.051);
+  margin: 0px 0px 36px 0px;
+  padding: 25px 0px 25px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  transition-duration: 0.2s;
+}
+
+.techIconAbout {
+  width: 50px;
+  height: 50px;
+  margin: 25px;
+  transition-duration: 0.2s;
+}
+
+.techIconAbout:hover {
+  transform: scale(1.05);
+}
+
+#aboutTechTitle {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1200px) {
+  #aboutContainer {
+    width: 80%;
+    max-width: 650px;
+  }
+
+  .techIconAbout {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 @media (max-width: 1137px) {
   #aboutPhoto {
     float: none;
@@ -338,6 +407,11 @@ h1 {
 }
 
 @media (max-width: 600px) {
+  .techIconAbout {
+    width: 35px;
+    height: 35px;
+  }
+
   #aboutPhoto {
     width: 250px;
     float: none;
