@@ -3,6 +3,10 @@ export const techObj = {
     name: 'My Technologies',
     style: { color: 'rgb(124, 124, 195)' },
   },
+  Technologies: {
+    name: 'Technologies',
+    style: { color: '#fff' },
+  },
   javascript: {
     name: 'JavaScript',
     style: { color: '#FDD83C' },
@@ -34,6 +38,10 @@ export const techObj = {
   express: {
     name: 'Express',
     style: { color: '#323232' },
+  },
+  passport: {
+    name: 'Passport',
+    style: { color: '#34E27A' },
   },
   postgresql: {
     name: 'PostgreSQL',
@@ -78,5 +86,13 @@ export const techObj = {
   heroku: {
     name: 'Heroku',
     style: { color: '#7E57C2' },
+  },
+  axios: {
+    name: 'Axios',
+    style: { color: '#854195' },
+  },
+  'chrome-extension': {
+    name: 'Chrome Extension',
+    style: { color: '#56D616' },
   },
 };

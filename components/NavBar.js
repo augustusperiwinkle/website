@@ -65,9 +65,6 @@ export class NavBar extends React.Component {
             <Link className="link" to="/home">
               <p id="navItem">Home</p>
             </Link>
-            <Link className="link" to="/projects">
-              <p id="navItem">Projects</p>
-            </Link>
             <Link className="link" to="/about">
               <p id="navItem">About</p>
             </Link>

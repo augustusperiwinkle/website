@@ -1,5 +1,6 @@
 const React = require('react');
 const { Footer } = require('./Footer');
+const { Link } = require('react-router-dom');
 
 export class HomePage extends React.Component {
   constructor() {
@@ -13,85 +14,123 @@ export class HomePage extends React.Component {
       <>
         <div className="fullPageContainer">
           <h1>Welcome Friend!</h1>
-          <div id="textAndImage">
-            <img src="codePicSmall.jpg" id="aboutPhoto" />
-            <p className="homePageText">
-              Activated charcoal DIY viral authentic pok pok crucifix prism
-              intelligentsia sriracha VHS whatever blog flexitarian locavore
-              neutra. Keytar snackwave prism, green juice kickstarter heirloom
-              etsy. Vape listicle polaroid fingerstache iPhone hot chicken
-              freegan artisan etsy live-edge. Skateboard VHS hoodie lyft
-              unicorn, beard iPhone tilde microdosing echo park whatever.
-            </p>
-            <br />
-            <p className="homePageText">
-              Bushwick helvetica viral yuccie gentrify woke wayfarers put a bird
-              on it chia palo santo small batch. Kogi bushwick celiac chartreuse
-              beard poutine. Celiac subway tile microdosing, lomo jianbing DIY
-              roof party flannel pug church-key pickled. Lumbersexual disrupt
-              viral hammock pok pok. Copper mug fingerstache crucifix
-              cold-pressed, irony leggings squid hexagon hell of banjo cliche
-              cardigan.
-            </p>
-            <br />
-            <p className="homePageText">
-              Kombucha beard hexagon tofu meditation messenger bag truffaut
-              photo booth chicharrones bespoke tote bag williamsburg wayfarers
-              chia etsy. Bitters church-key cornhole street art, lomo kombucha
-              locavore kickstarter yuccie flannel stumptown. Tbh blog locavore,
-              trust fund truffaut DIY seitan glossier migas listicle
-              vexillologist letterpress cray. Biodiesel blog four loko beard
-              poutine venmo locavore raw denim humblebrag williamsburg iPhone
-              unicorn next level.
-            </p>
-            <br />
-            <p className="homePageText">
-              Hexagon cloud bread offal vegan, vinyl everyday carry food truck
-              listicle. Cardigan humblebrag ennui schlitz. Lo-fi authentic craft
-              beer aesthetic la croix street art fam typewriter yuccie. Hammock
-              8-bit master cleanse, enamel pin blog franzen williamsburg
-              taiyaki. Pug semiotics kinfolk, irony pop-up butcher tousled
-              glossier meh post-ironic seitan tattooed fixie 90's.
-            </p>
-            <br />
-            <p className="homePageText">
-              Activated charcoal DIY viral authentic pok pok crucifix prism
-              intelligentsia sriracha VHS whatever blog flexitarian locavore
-              neutra. Keytar snackwave prism, green juice kickstarter heirloom
-              etsy. Vape listicle polaroid fingerstache iPhone hot chicken
-              freegan artisan etsy live-edge. Skateboard VHS hoodie lyft
-              unicorn, beard iPhone tilde microdosing echo park whatever.
-            </p>
-            <br />
-            <p className="homePageText">
-              Bushwick helvetica viral yuccie gentrify woke wayfarers put a bird
-              on it chia palo santo small batch. Kogi bushwick celiac chartreuse
-              beard poutine. Celiac subway tile microdosing, lomo jianbing DIY
-              roof party flannel pug church-key pickled. Lumbersexual disrupt
-              viral hammock pok pok. Copper mug fingerstache crucifix
-              cold-pressed, irony leggings squid hexagon hell of banjo cliche
-              cardigan.
-            </p>
-            <br />
-            <p className="homePageText">
-              Kombucha beard hexagon tofu meditation messenger bag truffaut
-              photo booth chicharrones bespoke tote bag williamsburg wayfarers
-              chia etsy. Bitters church-key cornhole street art, lomo kombucha
-              locavore kickstarter yuccie flannel stumptown. Tbh blog locavore,
-              trust fund truffaut DIY seitan glossier migas listicle
-              vexillologist letterpress cray. Biodiesel blog four loko beard
-              poutine venmo locavore raw denim humblebrag williamsburg iPhone
-              unicorn next level.
-            </p>
-            <br />
-            <p className="homePageText">
-              Hexagon cloud bread offal vegan, vinyl everyday carry food truck
-              listicle. Cardigan humblebrag ennui schlitz. Lo-fi authentic craft
-              beer aesthetic la croix street art fam typewriter yuccie. Hammock
-              8-bit master cleanse, enamel pin blog franzen williamsburg
-              taiyaki. Pug semiotics kinfolk, irony pop-up butcher tousled
-              glossier meh post-ironic seitan tattooed fixie 90's.
-            </p>
+          <div id="homePageProjectsContainer">
+            <div className="homePageProject">
+              <Link className="homePageProjectLink" to="/viditia">
+                <p className="homePageProjectTitle">Viditia</p>
+              </Link>
+              <Link className="homePageProjectLink" to="/viditia">
+                <div className="homePagePhotoWrapper">
+                  <img
+                    src="./photos/viditia.jpg"
+                    className="homePageProjectPhoto"
+                  />
+                  <div className="homePagePhotoMask">
+                    <p className="homePageProjectDescription">
+                      A web application where users can participate, visualize
+                      and interact with data from polls in a fun and clever way.
+                    </p>
+                    <div className="homePageIconRow">
+                      <img src="../icons/react.png" className="techIconHP" />
+                      <img src="../icons/redux.png" className="techIconHP" />
+                      <img src="../icons/d3.png" className="techIconHP" />
+                      <img src="../icons/mui.png" className="techIconHP" />
+                      <img src="../icons/firebase.png" className="techIconHP" />
+                      <img src="../icons/node.png" className="techIconHP" />
+                      <img src="../icons/webpack.png" className="techIconHP" />
+                      <img src="../icons/babel.png" className="techIconHP" />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div className="homePageProject">
+              <Link className="homePageProjectLink" to="/gracechopper">
+                <p className="homePageProjectTitle">Grace Chopper</p>
+              </Link>
+              <Link className="homePageProjectLink" to="/gracechopper">
+                <div className="homePagePhotoWrapper">
+                  <img
+                    src="./photos/gracechopper.jpg"
+                    className="homePageProjectPhoto"
+                  />
+                  <div className="homePagePhotoMask">
+                    <p className="homePageProjectDescription">
+                      An eCommerce store featuring guest & user accounts, OAuth,
+                      admin privileges, product filters and more.
+                    </p>
+                    <div className="homePageIconRow">
+                      <img src="../icons/react.png" className="techIconHP" />
+                      <img src="../icons/redux.png" className="techIconHP" />
+                      <img
+                        src="../icons/reactrouter.png"
+                        className="techIconHP"
+                      />
+                      <img src="../icons/node.png" className="techIconHP" />
+                      <img
+                        src="../icons/postgresql.png"
+                        className="techIconHP"
+                      />
+                      <img
+                        src="../icons/sequelize.png"
+                        className="techIconHP"
+                      />
+                      <img src="../icons/webpack.png" className="techIconHP" />
+                      <img src="../icons/babel.png" className="techIconHP" />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div className="homePageProject">
+              <Link className="homePageProjectLink" to="/window">
+                <p className="homePageProjectTitle">Window</p>
+              </Link>
+              <Link className="homePageProjectLink" to="/window">
+                <div className="homePagePhotoWrapper">
+                  <img
+                    src="./photos/window.jpg"
+                    className="homePageProjectPhoto"
+                  />
+                  <div className="homePagePhotoMask">
+                    <p className="homePageProjectDescription">
+                      A chrome extension that visually renders the current
+                      weather conditions in your city.
+                    </p>
+                    <div className="homePageIconRow">
+                      <img
+                        src="../icons/chrome-extension.png"
+                        className="techIconHP"
+                      />
+                      <img src="../icons/axios.png" className="techIconHP" />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div className="homePageProject">
+              <a href="https://thedereklouis.medium.com/add-an-interactive-chart-to-your-react-app-using-d3-v6-6c79f14a05f5">
+                <p className="homePageProjectTitle">D3.js Tutorial</p>
+              </a>
+              <a href="https://thedereklouis.medium.com/add-an-interactive-chart-to-your-react-app-using-d3-v6-6c79f14a05f5">
+                <div className="homePagePhotoWrapper">
+                  <img
+                    src="./photos/medium.jpg"
+                    className="homePageProjectPhoto"
+                  />
+                  <div className="homePagePhotoMask">
+                    <p className="homePageProjectDescription">
+                      A Medium article with an accompanying code demo, written
+                      to walk you through your first D3 chart.
+                    </p>
+                    <div className="homePageIconRow">
+                      <img src="../icons/react.png" className="techIconHP" />
+                      <img src="../icons/d3.png" className="techIconHP" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
         <Footer />

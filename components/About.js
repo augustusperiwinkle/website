@@ -31,18 +31,21 @@ export class About extends React.Component {
       <>
         <div className="fullPageContainer">
           <div id="aboutContainer">
-            <div className="homePageText">
-              Derek Louis is an emerging software developer, who completed his
-              certificate in software engineering from Fullstack in February
-              2021. Before Fullstack, Derek had been working as a professional
-              musician, and began teaching himself the basics of JS, HTML, and
-              CSS. After completing a few personal web projects, he decided to
-              take his skills to a serious level and started the course at
-              Fullstack. Derek has excelled at developing a full stack
-              Javascript tech stack incorporating Node, React-Redux,
-              Express, Sequelize and more. He is interested in pursuing a full
-              stack or front end role in fields ranging from music and
-              entertainment to science and education.
+            <div id="textAndImage">
+              <img src="./photos/codePicSmall.jpg" id="myPhoto" />
+              <div className="aboutPageText">
+                Derek Louis is an emerging software developer with a certificate
+                in software engineering from Fullstack Academy. Before 2020,
+                Derek had been working as a professional musician, and began
+                teaching himself the basics of JS, HTML, and CSS. After
+                completing a few personal web projects, he decided to take his
+                skills to a serious level and started the course at Fullstack.
+                Derek has excelled at developing a full stack Javascript tech
+                stack incorporating Node, React-Redux, Express, Sequelize and
+                more. He is interested in pursuing a full stack or front end
+                role in fields ranging from music and entertainment to science
+                and education.
+              </div>
             </div>
             <h1
               style={techObj[this.state.technology].style}
@@ -86,6 +89,11 @@ export class About extends React.Component {
                 src="../icons/express.png"
                 className="techIconAbout"
                 id="express"
+              />
+              <img
+                src="../icons/passport.png"
+                className="techIconAbout"
+                id="passport"
               />
               <img
                 src="../icons/postgresql.png"

@@ -1,12 +1,34 @@
 const React = require('react');
 const { Footer } = require('./Footer');
+const { techObj } = require('./data/techObj');
 
-export class Projects extends React.Component {
+export class Viditia extends React.Component {
   constructor() {
     super();
+    this.state = {
+      technology: 'Technologies',
+    };
+    this.mouseOver = this.mouseOver.bind(this);
+    this.mouseLeave = this.mouseLeave.bind(this);
   }
   componentDidMount() {
     window.scrollTo(0, 0);
+  }
+  mouseOver(e) {
+    if (e.target.className === 'techIcon') {
+      this.setState({
+        technology: e.target.id,
+      });
+    } else {
+      this.setState({
+        technology: 'Technologies',
+      });
+    }
+  }
+  mouseLeave() {
+    this.setState({
+      technology: 'Technologies',
+    });
   }
   render() {
     return (
@@ -20,12 +42,6 @@ export class Projects extends React.Component {
             and interact with data from polls in a fun and clever way.
           </p>
           <div id="videoMaster">
-            <div className="iconRow">
-              <img src="../icons/react.png" className="techIcon" />
-              <img src="../icons/redux.png" className="techIcon" />
-              <img src="../icons/d3.png" className="techIcon" />
-              <img src="../icons/mui.png" className="techIcon" />
-            </div>
             <div class="videoWrapper">
               <iframe
                 width="560"
@@ -36,12 +52,35 @@ export class Projects extends React.Component {
                 allowfullscreen
               ></iframe>
             </div>
-            <div className="iconRow">
-              <img src="../icons/firebase.png" className="techIcon" />
-              <img src="../icons/node.png" className="techIcon" />
-              <img src="../icons/webpack.png" className="techIcon" />
-              <img src="../icons/babel.png" className="techIcon" />
+            <div
+              className="iconRow"
+              id="projectIconRow"
+              onMouseOver={this.mouseOver}
+              onMouseLeave={this.mouseLeave}
+            >
+              <img src="../icons/react.png" className="techIcon" id="react" />
+              <img src="../icons/redux.png" className="techIcon" id="redux" />
+              <img src="../icons/d3.png" className="techIcon" id="d3" />
+              <img src="../icons/mui.png" className="techIcon" id="mui" />
+              <img
+                src="../icons/firebase.png"
+                className="techIcon"
+                id="firebase"
+              />
+              <img src="../icons/node.png" className="techIcon" id="node" />
+              <img
+                src="../icons/webpack.png"
+                className="techIcon"
+                id="webpack"
+              />
+              <img src="../icons/babel.png" className="techIcon" id="babel" />
             </div>
+            <h1
+              style={techObj[this.state.technology].style}
+              id="projectTechTitle"
+            >
+              {techObj[this.state.technology].name}
+            </h1>
           </div>
           <p id="projectDescription">
             Viditia was built off of industry standard technologies: D3.js,

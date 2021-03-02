@@ -3,8 +3,10 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 
 const { HomePage } = require('./HomePage');
 const { Contact } = require('./Contact');
-const { Projects } = require('./Projects');
 const { About } = require('./About');
+const { Viditia } = require('./Viditia');
+const { GraceChopper } = require('./GraceChopper');
+const { Window } = require('./Window');
 const { ErrorPage } = require('./ErrorPage');
 
 export class Routes extends React.Component {
@@ -14,9 +16,11 @@ export class Routes extends React.Component {
         <Switch>
           <Redirect exact from="/" to="/home" />
           <Route path="/home" component={HomePage} />
-          <Route path="/projects" component={Projects} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/viditia" component={Viditia} />
+          <Route path="/gracechopper" component={GraceChopper} />
+          <Route path="/window" component={Window} />
           <Route component={ErrorPage} />
         </Switch>
       </>

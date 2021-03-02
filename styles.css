@@ -12,6 +12,90 @@ h1 {
   font-family: 'Open Sans', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#homePageProjectsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1500px;
+  margin: 0px 0px 25px 0px;
+}
+
+.homePageProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.homePageProjectPhoto {
+  width: 600px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 0px 0px 0px 0px;
+  display: block;
+}
+
+.homePageProjectTitle {
+  font-size: 30px;
+  margin: 0px 0px 20px 0px;
+}
+
+.homePagePhotoWrapper {
+  position: relative;
+}
+
+.homePagePhotoMask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+}
+
+.homePagePhotoWrapper:hover .homePagePhotoMask {
+  opacity: 0.95;
+  cursor: pointer;
+}
+
+.homePageProjectDescription {
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 42px;
+  margin: auto 0px 0px 0px;
+}
+
+.homePageIconRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 0px 0px 0px;
+  width: 80%;
+}
+
+.homePageProjectLink {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
 #counterButton {
   border-radius: 5px;
   border: none;
@@ -26,32 +110,32 @@ h1 {
 }
 
 #textAndImage {
-  margin: 50px 0px 50px 0px;
-  width: 50%;
-  max-width: 1050px;
+  margin: 0px 0px 50px 0px;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
 }
 
 #aboutContainer {
   margin: 50px 0px 50px 0px;
-  width: 50%;
-  max-width: 1050px;
+  width: 1050px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#aboutPhoto {
-  width: 400px;
-  height: auto;
+#myPhoto {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  float: left;
-  margin: 0px 50px 50px 0px;
+  margin: 0px 75px 0px 0px;
 }
 
-.homePageText {
-  margin: 0px 50px 0px 0px;
+.aboutPageText {
+  margin: 0px 0px 0px 0px;
   font-size: 18px;
   line-height: 30px;
+  align-self: center;
 }
 
 #navBarWrap {
@@ -101,12 +185,14 @@ h1 {
   justify-content: space-evenly;
   align-items: center;
   max-width: 1200px;
+  min-width: 375px;
 }
 
 .fullPageContainer {
   margin: 100px 0px 0px 0px;
   width: 100vw;
   max-width: 100%;
+  min-width: 375px;
   min-height: 85vh;
   display: flex;
   flex-direction: column;
@@ -322,6 +408,17 @@ h1 {
   line-height: 30px;
 }
 
+.techIconHP {
+  width: 40px;
+  height: auto;
+  transition-duration: 0.2s;
+  margin: 15px 0px 25px 0px;
+}
+
+.techIconHP:hover {
+  transform: scale(1.05);
+}
+
 .iconRow {
   display: flex;
   justify-content: space-between;
@@ -329,9 +426,10 @@ h1 {
 }
 
 .techIcon {
-  width: 50px;
+  width: 40px;
   height: auto;
   transition-duration: 0.2s;
+  margin: 15px 0px 25px 0px;
 }
 
 .techIcon:hover {
@@ -343,7 +441,6 @@ h1 {
   max-width: 550px;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.051);
-  margin: 0px 0px 36px 0px;
   padding: 25px 0px 25px 0px;
   display: flex;
   flex-wrap: wrap;
@@ -369,36 +466,153 @@ h1 {
   font-size: 32px;
 }
 
-@media (max-width: 1200px) {
+#projectTechTitle {
+  margin: 0px;
+  font-size: 32px;
+}
+
+@media (max-width: 1550px) {
+  #homePageProjectsContainer {
+    width: 1300px;
+  }
+
+  .homePageProject {
+    margin: 40px;
+  }
+
+  .homePageProjectPhoto {
+    width: 500px;
+  }
+
+  .homePageProjectTitle {
+    font-size: 26px;
+  }
+
+  .homePageProjectDescription {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .homePageIconRow {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1225px) {
+  #aboutContainer {
+    width: 800px;
+  }
+
+  #myPhoto {
+    margin: 0px 50px 0px 0px;
+  }
+
+  #homePageProjectsContainer {
+    width: 1100px;
+  }
+
+  .homePageProject {
+    margin: 30px;
+  }
+
+  .homePageProjectPhoto {
+    width: 475px;
+  }
+
+  .techIconHP {
+    width: 35px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #homePageProjectsContainer {
+    width: 625px;
+  }
+
+  .homePageProject {
+    margin: 50px;
+  }
+
+  .homePageProjectPhoto {
+    width: 600px;
+  }
+
+  .homePageProjectTitle {
+    font-size: 30px;
+  }
+
+  .homePageProjectDescription {
+    font-size: 24px;
+    line-height: 42px;
+  }
+
+  .homePageIconRow {
+    width: 80%;
+  }
+
+  .techIconHP {
+    width: 40px;
+  }
+}
+
+@media (max-width: 950px) {
+  #textAndImage {
+    flex-direction: column;
+  }
+
+  #myPhoto {
+    align-self: center;
+    margin: 0px 0px 36px 0px;
+  }
+
+  #aboutContainer {
+    width: 650px;
+    margin: 10px 0px 75px 0px;
+  }
+
+  #aboutTechTitle {
+    margin: 0px 36px 25px 36px;
+  }
+
+  /* #projectTechTitle {
+    margin: 0px 36px 25px 36px;
+  } */
+}
+
+@media (max-width: 850px) {
   #aboutContainer {
     width: 80%;
-    max-width: 650px;
   }
 }
 
-@media (max-width: 1137px) {
-  #aboutPhoto {
-    float: none;
-    margin: 0px 0px 50px 0px;
+@media (max-width: 825px) {
+  #homePageProjectsContainer {
+    width: 525px;
   }
 
-  #textAndImage {
-    margin: 50px 0px 50px 0px;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 650px;
+  .homePageProject {
+    margin: 40px;
   }
 
-  .homePageText {
-    margin: 0px 0px 0px 0px;
+  .homePageProjectPhoto {
+    width: 475px;
   }
-}
 
-@media (max-width: 820px) {
-  #aboutPhoto {
-    width: 325px;
+  .homePageProjectTitle {
+    font-size: 30px;
+  }
+
+  .homePageProjectDescription {
+    font-size: 22px;
+    line-height: 38px;
+  }
+
+  .homePageIconRow {
+    width: 90%;
+  }
+
+  .techIconHP {
+    width: 35px;
   }
 }
 
@@ -410,14 +624,12 @@ h1 {
 }
 
 @media (max-width: 600px) {
-  #aboutPhoto {
+  #myPhoto {
     width: 250px;
     float: none;
-    margin: 0px 0px 50px 0px;
   }
 
   #textAndImage {
-    margin: 50px 0px 50px 0px;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -426,13 +638,19 @@ h1 {
 
   .techIcon {
     width: 30px;
+    margin: 10px 0px 15px 0px;
+  }
+
+  .techIconHP {
+    width: 30px;
+    margin: 10px 0px 15px 0px;
   }
 
   .footerIcon {
     font-size: 30px;
   }
 
-  .homePageText {
+  .aboutPageText {
     margin: 0px 0px 0px 0px;
   }
 
@@ -499,11 +717,45 @@ h1 {
   .menu-btn.open .menu-btn__burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
+
+  #homePageProjectsContainer {
+    width: 80%;
+  }
+
+  .homePageProject {
+    margin: 30px 0px 30px 0px;
+  }
+
+  .homePageProjectPhoto {
+    width: 100%;
+  }
+
+  .homePageProjectTitle {
+    font-size: 30px;
+  }
+
+  .homePageProjectDescription {
+    font-size: 22px;
+    line-height: 38px;
+  }
 }
 
 @media (max-width: 575px) {
   .techIconAbout {
     margin: 20px;
+  }
+
+  .homePageProjectTitle {
+    font-size: 28px;
+  }
+
+  .homePageProjectDescription {
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  .homePageProject {
+    margin: 25px 0px 25px 0px;
   }
 }
 
@@ -517,5 +769,41 @@ h1 {
   }
   #aboutTechTitle {
     font-size: 27px;
+  }
+  #projectTechTitle {
+    font-size: 27px;
+  }
+
+  .homePageProjectTitle {
+    font-size: 26px;
+  }
+
+  .homePageProjectDescription {
+    font-size: 18px;
+    line-height: 30px;
+    width: 80%;
+  }
+
+  .homePageProject {
+    margin: 20px 0px 20px 0px;
+  }
+}
+
+@media (max-width: 425px) {
+  .techIconHP {
+    width: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .homePageProjectDescription {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  #homePageProjectsContainer {
+    width: 288px;
   }
 }
