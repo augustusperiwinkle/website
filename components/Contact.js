@@ -10,7 +10,7 @@ export class Contact extends React.Component {
   render() {
     return (
       <div className="fullPageContainer">
-        <h1 style={{ 'margin-bottom': '100px' }}>Let's get in touch!</h1>
+        <h1 id="contactTitle">Let's get in touch!</h1>
         <a
           href="https://github.com/dereklouis"
           className="gitHubIcon contactLink"
