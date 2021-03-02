@@ -20,7 +20,7 @@ export const projects = [
     ],
     videoURL: 'https://www.youtube.com/embed/zXWWoYZqnwo',
     description:
-      'Viditia was built off of industry standard technologies: D3.js, Firebase, React, Redux, Material UI, Node, Express, HTML5 & CSS. Firebase allowed for reliable implementation of OAuth and back-end services. Our Firebase data base schema design was the backbone of Viditia, and crucial to get right. Our team went through several iterations of the design before we landed on the final production version. Once our schema was finalized, we were able to implement realtime voting/ updates to all of our D3 visualizations. D3 also allowed us to create highly customizable graphs in a wide range of styles.',
+      'Viditia was built off of industry standard technologies: D3.js, Firebase, React, Redux, Material UI, Node, Express, HTML5 & CSS. Firebase allowed for reliable implementation of OAuth and back-end services. Our NoSQL Firebase data base schema design was the backbone of Viditia, and crucial to get right. Our team went through several iterations of the design before we landed on the final production version. Once our schema was finalized, we were able to implement realtime voting/ updates to all of our D3 visualizations. D3 also allowed us to create highly customizable graphs in a wide range of styles.',
     description2: null,
   },
   {
@@ -43,8 +43,9 @@ export const projects = [
       'babel',
     ],
     videoURL: null,
-    description: 'Grace Chopper the eCommerce store.',
-    description2: null,
+    description: `In the market for a fictitious motorcycle? Grace Chopper makes shopping easy by incorporating many of today's most popular features. Product, customer, and order information is stored in our SQL database via Node, PostgreSQL and Sequelize. User sessions persist through express-session, while guest sessions utilize local storage for persistence. Want user features like past order history and autofill on checkout, but don't feel like making an account? Just log in with Google via Passport.js OAuth.`,
+    description2:
+      'With the additions of product filters for customers, and admin privileges for easy site maintenance, Grace Chopper is just a simple stripe integration (and a couple dozen real life motorcycles) away from making actual sales.',
   },
   {
     title: 'Window',

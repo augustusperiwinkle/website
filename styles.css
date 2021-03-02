@@ -14,6 +14,7 @@ h1 {
 
 a {
   text-decoration: none;
+  cursor: pointer;
   color: black;
 }
 
@@ -90,10 +91,14 @@ a {
   width: 80%;
 }
 
-.homePageProjectLink {
-  text-decoration: none;
-  cursor: pointer;
-  color: black;
+#projectLink {
+  font-size: 24px;
+  margin: 0px 0px 50px 0px;
+  transition-duration: 0.25s;
+}
+
+#projectLink:hover {
+  color: rgb(220, 137, 20);
 }
 
 #counterButton {
@@ -199,7 +204,7 @@ a {
   align-items: center;
 }
 
-.link {
+.navItem {
   text-decoration: none;
   color: black;
   font-family: 'Open Sans', sans-serif;
@@ -211,7 +216,7 @@ a {
   color: black;
 }
 
-.link:hover {
+.navItem:hover {
   color: rgb(220, 137, 20);
 }
 
@@ -475,6 +480,42 @@ a {
   margin: 0px 0px 100px 0px;
 }
 
+.toolTip {
+  position: relative;
+  display: inline-block;
+}
+
+.toolTip .toolTipText {
+  visibility: hidden;
+  background-color: rgb(245, 245, 245);
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  width: 85px;
+  bottom: 100%;
+  left: 100%;
+  margin-left: -62px;
+  position: absolute;
+  z-index: 5;
+}
+
+.toolTip:hover .toolTipText {
+  visibility: visible;
+}
+
+.toolTip .toolTipText::after {
+  content: ' ';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(220, 220, 220) transparent transparent transparent;
+}
+
 @media (max-width: 1550px) {
   #homePageProjectsContainer {
     width: 1300px;
@@ -499,6 +540,12 @@ a {
 
   .homePageIconRow {
     width: 90%;
+  }
+
+  .toolTip .toolTipText {
+    margin-left: -58px;
+    width: 75px;
+    font-size: 12px;
   }
 }
 
@@ -525,6 +572,12 @@ a {
 
   .techIconHP {
     width: 35px;
+  }
+
+  .toolTip .toolTipText {
+    margin-left: -52px;
+    width: 70px;
+    font-size: 11px;
   }
 }
 
@@ -556,6 +609,12 @@ a {
 
   .techIconHP {
     width: 40px;
+  }
+
+  .toolTip .toolTipText {
+    font-size: 13px;
+    width: 85px;
+    margin-left: -62px;
   }
 }
 
@@ -618,6 +677,12 @@ a {
   #projectAnchor {
     margin: 36px 0px 0px 0px;
   }
+
+  .toolTip .toolTipText {
+    margin-left: -55px;
+    width: 75px;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 670px) {
@@ -663,7 +728,7 @@ a {
     display: inline-flex;
   }
 
-  .link {
+  .navItem {
     display: none;
     visibility: hidden;
   }
@@ -750,6 +815,12 @@ a {
   #contactTitle {
     margin: 0px 0px 75px 0px;
   }
+
+  .toolTip .toolTipText {
+    margin-left: -50px;
+    width: 70px;
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -807,6 +878,12 @@ a {
   #contactTitle {
     margin: 0px 0px 50px 0px;
   }
+
+  .toolTip .toolTipText {
+    margin-left: -45px;
+    width: 60px;
+    font-size: 9px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -816,6 +893,12 @@ a {
 
   #contactTitle {
     margin: 0px 0px 25px 0px;
+  }
+
+  .toolTip .toolTipText {
+    margin-left: -38px;
+    width: 50px;
+    font-size: 7px;
   }
 }
 

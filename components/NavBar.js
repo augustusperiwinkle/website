@@ -62,14 +62,14 @@ export class NavBar extends React.Component {
             <Link className="logoLink" to="/home" onClick={this.closeMenu}>
               <div id="name">Derek Louis</div>
             </Link>
-            <Link className="link" to="/home">
-              <p id="navItem">Home</p>
+            <Link className="navItem" to="/home">
+              <p>Home</p>
             </Link>
-            <Link className="link" to="/about">
-              <p id="navItem">About</p>
+            <Link className="navItem" to="/about">
+              <p>About</p>
             </Link>
-            <Link className="link" to="/contact">
-              <p id="navItem">Contact</p>
+            <Link className="navItem" to="/contact">
+              <p>Contact</p>
             </Link>
           </div>
         </div>

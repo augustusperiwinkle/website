@@ -41,7 +41,7 @@ export class Project extends React.Component {
     ) : (
       <>
         <div className="fullPageContainer">
-          <a href={myProject.projectLink} id="projectAnchor">
+          <a href={myProject.projectLink} id="projectAnchor" target="_blank">
             <h1 id="projectTitle">{myProject.title}</h1>
           </a>
           <p id="projectSubtitle">{myProject.subTitle}</p>
@@ -85,6 +85,9 @@ export class Project extends React.Component {
           {myProject.description2 && (
             <p id="projectDescription">{myProject.description2}</p>
           )}
+          <a id="projectLink" href={myProject.projectLink} target="_blank">
+            {`Click here to check out ${myProject.title}!`}
+          </a>
         </div>
         <Footer />
       </>

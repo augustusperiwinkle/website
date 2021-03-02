@@ -1,6 +1,7 @@
 const React = require('react');
 const { Link } = require('react-router-dom');
 const { projects } = require('./data/projects');
+const { techObj } = require('./data/techObj');
 
 export const HomePageProject = (props) => {
   const { title } = props;
@@ -22,10 +23,18 @@ export const HomePageProject = (props) => {
             <div className="homePageIconRow">
               {myProject.technologies.map((technology) => {
                 return (
-                  <img
-                    src={`../icons/${technology}.png`}
-                    className="techIconHP"
-                  />
+                  <div className="toolTip">
+                    <span
+                      className="toolTipText"
+                      style={{ color: techObj[technology].style.color }}
+                    >
+                      {techObj[technology].name}
+                    </span>
+                    <img
+                      src={`../icons/${technology}.png`}
+                      className="techIconHP"
+                    />
+                  </div>
                 );
               })}
             </div>

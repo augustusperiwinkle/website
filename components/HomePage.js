@@ -20,10 +20,16 @@ export class HomePage extends React.Component {
               return <HomePageProject title={project.title} />;
             })}
             <div className="homePageProject">
-              <a href="https://thedereklouis.medium.com/add-an-interactive-chart-to-your-react-app-using-d3-v6-6c79f14a05f5">
+              <a
+                href="https://thedereklouis.medium.com/add-an-interactive-chart-to-your-react-app-using-d3-v6-6c79f14a05f5"
+                target="_blank"
+              >
                 <p className="homePageProjectTitle">D3.js Tutorial</p>
               </a>
-              <a href="https://thedereklouis.medium.com/add-an-interactive-chart-to-your-react-app-using-d3-v6-6c79f14a05f5">
+              <a
+                href="https://thedereklouis.medium.com/add-an-interactive-chart-to-your-react-app-using-d3-v6-6c79f14a05f5"
+                target="_blank"
+              >
                 <div className="homePagePhotoWrapper">
                   <img
                     src="./photos/medium.jpg"
@@ -35,8 +41,24 @@ export class HomePage extends React.Component {
                       to walk you through your first D3 chart.
                     </p>
                     <div className="homePageIconRow">
-                      <img src="../icons/react.png" className="techIconHP" />
-                      <img src="../icons/d3.png" className="techIconHP" />
+                      <div className="toolTip">
+                        <span
+                          className="toolTipText"
+                          style={{ color: '#61DAFB' }}
+                        >
+                          React
+                        </span>
+                        <img src="../icons/react.png" className="techIconHP" />
+                      </div>
+                      <div className="toolTip">
+                        <span
+                          className="toolTipText"
+                          style={{ color: '#F5864A' }}
+                        >
+                          D3
+                        </span>
+                        <img src="../icons/d3.png" className="techIconHP" />
+                      </div>
                     </div>
                   </div>
                 </div>
