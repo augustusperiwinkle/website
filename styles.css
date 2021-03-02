@@ -389,7 +389,7 @@ a {
 #projectAnchor {
   display: block;
   text-decoration: none;
-  margin: 50px 0px 0px 0px;
+  margin: 50px 0px 15px 0px;
 }
 
 #projectSubtitle {
@@ -573,10 +573,6 @@ a {
   #aboutTechTitle {
     margin: 0px 36px 25px 36px;
   }
-
-  /* #projectTechTitle {
-    margin: 0px 36px 25px 36px;
-  } */
 }
 
 @media (max-width: 850px) {
@@ -613,6 +609,10 @@ a {
 
   .techIconHP {
     width: 35px;
+  }
+
+  #projectAnchor {
+    margin: 36px 0px 0px 0px;
   }
 }
 
@@ -738,6 +738,10 @@ a {
     font-size: 22px;
     line-height: 38px;
   }
+
+  #projectAnchor {
+    margin: 15px 0px 0px 0px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -786,6 +790,10 @@ a {
 
   .homePageProject {
     margin: 20px 0px 20px 0px;
+  }
+
+  #projectAnchor {
+    margin: 0px 0px 0px 0px;
   }
 }
 
