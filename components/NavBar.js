@@ -37,10 +37,26 @@ export class NavBar extends React.Component {
   render() {
     window.onscroll = () => {
       const navBarWrap = document.getElementById('navBarWrap');
-      if (window.scrollY <= 15 && userScrolled) navBarWrap.className = 'white';
-      else if (window.scrollY > 15) {
-        navBarWrap.className = 'gray';
+      const name = document.getElementById('name');
+      const burger = document.getElementById('burger');
+      const navItemHome = document.getElementById('navItemHome');
+      const navItemAbout = document.getElementById('navItemAbout');
+      const navItemContact = document.getElementById('navItemContact');
+      if (window.scrollY <= 15 && userScrolled) {
+        navBarWrap.className = 'navBarMain';
+        name.style.color = 'black';
+        burger.className = 'menu-btn__burger_Black';
+        navItemHome.className = 'navItemMain';
+        navItemAbout.className = 'navItemMain';
+        navItemContact.className = 'navItemMain';
+      } else if (window.scrollY > 15) {
+        navBarWrap.className = 'navBarAlt';
         userScrolled = true;
+        name.style.color = 'white';
+        burger.className = 'menu-btn__burger_White';
+        navItemHome.className = 'navItemAlt';
+        navItemAbout.className = 'navItemAlt';
+        navItemContact.className = 'navItemAlt';
       }
     };
     window.onresize = () => {
@@ -56,19 +72,19 @@ export class NavBar extends React.Component {
         <SlideMenu closeMenu={this.closeMenu} />
         <div id="navBarWrap">
           <div id="navBar">
-            <div class="menu-btn" onClick={this.handleClick}>
-              <div class="menu-btn__burger"></div>
+            <div className="menu-btn" onClick={this.handleClick}>
+              <div id="burger" className="menu-btn__burger_Black"></div>
             </div>
             <Link className="logoLink" to="/home" onClick={this.closeMenu}>
               <div id="name">Derek Louis</div>
             </Link>
-            <Link className="navItem" to="/home">
+            <Link className="navItemMain" id="navItemHome" to="/home">
               <p>Home</p>
             </Link>
-            <Link className="navItem" to="/about">
+            <Link className="navItemMain" id="navItemAbout" to="/about">
               <p>About</p>
             </Link>
-            <Link className="navItem" to="/contact">
+            <Link className="navItemMain" id="navItemContact" to="/contact">
               <p>Contact</p>
             </Link>
           </div>

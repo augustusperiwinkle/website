@@ -1,15 +1,16 @@
-/* font-family: 'Average', serif;
-font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
 
 body {
   margin: 0px;
 }
 
 h1 {
-  color: rgb(124, 124, 195);
+  color: #0670b2;
   margin: 22px 36px 0px 36px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -44,7 +45,8 @@ a {
 }
 
 .homePageProjectTitle {
-  font-size: 30px;
+  font-size: 28px;
+  font-family: 'Open Sans', sans-serif;
   margin: 0px 0px 20px 0px;
 }
 
@@ -76,10 +78,11 @@ a {
 }
 
 .homePageProjectDescription {
-  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  width: 65%;
   text-align: center;
-  font-size: 24px;
-  line-height: 42px;
+  font-size: 22px;
+  line-height: 38px;
   margin: auto 0px 0px 0px;
 }
 
@@ -92,13 +95,15 @@ a {
 }
 
 #projectLink {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   font-size: 24px;
   margin: 0px 0px 50px 0px;
   transition-duration: 0.25s;
 }
 
 #projectLink:hover {
-  color: rgb(220, 137, 20);
+  color: #0670b2;
 }
 
 #counterButton {
@@ -151,35 +156,36 @@ a {
   display: flex;
   align-items: center;
   z-index: 5;
+  min-width: 375px;
 }
 
-@keyframes toWhite {
+@keyframes toMain {
   0% {
-    background-color: #ddd;
+    background-color: #89cffb;
   }
   100% {
     background-color: #fff;
   }
 }
 
-.white {
+.navBarMain {
   background-color: white;
-  animation-name: toWhite;
+  animation-name: toMain;
   animation-duration: 0.75s;
 }
 
-@keyframes toGray {
+@keyframes toAlt {
   0% {
     background-color: #fff;
   }
   100% {
-    background-color: #ddd;
+    background-color: #89cffb;
   }
 }
 
-.gray {
-  background-color: #ddd;
-  animation-name: toGray;
+.navBarAlt {
+  background-color: #89cffb;
+  animation-name: toAlt;
   animation-duration: 0.75s;
 }
 
@@ -204,20 +210,31 @@ a {
   align-items: center;
 }
 
-.navItem {
+.navItemMain {
   text-decoration: none;
   color: black;
   font-family: 'Open Sans', sans-serif;
-  transition-duration: 0.25s;
+  transition-duration: 0.5s;
+}
+
+.navItemMain:hover {
+  color: #0670b2;
+}
+
+.navItemAlt {
+  text-decoration: none;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  transition-duration: 0.5s;
+}
+
+.navItemAlt:hover {
+  color: black;
 }
 
 .logoLink {
   text-decoration: none;
   color: black;
-}
-
-.navItem:hover {
-  color: rgb(220, 137, 20);
 }
 
 .SMLink {
@@ -230,7 +247,7 @@ a {
 }
 
 .SMLink:hover {
-  color: rgb(220, 137, 20);
+  color: #0670b2;
 }
 
 #SMLinkBox {
@@ -238,8 +255,10 @@ a {
 }
 
 #name {
-  font-family: 'Average', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   font-size: 36px;
+  transition-duration: 0.5s;
 }
 
 .menu-btn {
@@ -398,14 +417,18 @@ a {
 }
 
 #projectSubtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   width: 70%;
   max-width: 600px;
-  font-size: 20px;
+  font-size: 19px;
   text-align: center;
   line-height: 30px;
 }
 
 #projectDescription {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   margin: 0px 0px 50px 0px;
   width: 80%;
   max-width: 650px;
@@ -489,10 +512,11 @@ a {
   visibility: hidden;
   background-color: rgb(245, 245, 245);
   color: black;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
-  font-size: 13px;
+  font-size: 12px;
   width: 85px;
   bottom: 100%;
   left: 100%;
@@ -530,12 +554,12 @@ a {
   }
 
   .homePageProjectTitle {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .homePageProjectDescription {
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 18px;
+    line-height: 31px;
   }
 
   .homePageIconRow {
@@ -543,9 +567,9 @@ a {
   }
 
   .toolTip .toolTipText {
+    font-size: 11px;
     margin-left: -58px;
     width: 75px;
-    font-size: 12px;
   }
 }
 
@@ -577,7 +601,7 @@ a {
   .toolTip .toolTipText {
     margin-left: -52px;
     width: 70px;
-    font-size: 11px;
+    font-size: 10px;
   }
 }
 
@@ -595,12 +619,12 @@ a {
   }
 
   .homePageProjectTitle {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .homePageProjectDescription {
-    font-size: 24px;
-    line-height: 42px;
+    font-size: 22px;
+    line-height: 38px;
   }
 
   .homePageIconRow {
@@ -612,7 +636,7 @@ a {
   }
 
   .toolTip .toolTipText {
-    font-size: 13px;
+    font-size: 12px;
     width: 85px;
     margin-left: -62px;
   }
@@ -657,13 +681,9 @@ a {
     width: 475px;
   }
 
-  .homePageProjectTitle {
-    font-size: 30px;
-  }
-
   .homePageProjectDescription {
-    font-size: 22px;
-    line-height: 38px;
+    font-size: 20px;
+    line-height: 34px;
   }
 
   .homePageIconRow {
@@ -681,7 +701,7 @@ a {
   .toolTip .toolTipText {
     margin-left: -55px;
     width: 75px;
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
@@ -693,6 +713,10 @@ a {
 }
 
 @media (max-width: 600px) {
+  #name {
+    margin-right: 9vw;
+  }
+
   #myPhoto {
     width: 250px;
     float: none;
@@ -728,7 +752,12 @@ a {
     display: inline-flex;
   }
 
-  .navItem {
+  .navItemMain {
+    display: none;
+    visibility: hidden;
+  }
+
+  .navItemAlt {
     display: none;
     visibility: hidden;
   }
@@ -751,15 +780,15 @@ a {
     display: inline-flex;
     visibility: visible;
   }
-  .menu-btn__burger {
+  .menu-btn__burger_Black {
     width: 30px;
     height: 4px;
     background: #000;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
   }
-  .menu-btn__burger::before,
-  .menu-btn__burger::after {
+  .menu-btn__burger_Black::before,
+  .menu-btn__burger_Black::after {
     content: '';
     position: absolute;
     width: 30px;
@@ -768,22 +797,58 @@ a {
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
   }
-  .menu-btn__burger::before {
+  .menu-btn__burger_Black::before {
     transform: translateY(-10px);
   }
-  .menu-btn__burger::after {
+  .menu-btn__burger_Black::after {
     transform: translateY(10px);
   }
   /* ANIMATION */
-  .menu-btn.open .menu-btn__burger {
+  .menu-btn.open .menu-btn__burger_Black {
     transform: translateX(-50px);
     background: transparent;
     box-shadow: none;
   }
-  .menu-btn.open .menu-btn__burger::before {
+  .menu-btn.open .menu-btn__burger_Black::before {
     transform: rotate(45deg) translate(35px, -35px);
   }
-  .menu-btn.open .menu-btn__burger::after {
+  .menu-btn.open .menu-btn__burger_Black::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+  .menu-btn__burger_White {
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger_White::before,
+  .menu-btn__burger_White::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger_White::before {
+    transform: translateY(-10px);
+  }
+  .menu-btn__burger_White::after {
+    transform: translateY(10px);
+  }
+  /* ANIMATION */
+  .menu-btn.open .menu-btn__burger_White {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open .menu-btn__burger_White::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.open .menu-btn__burger_White::after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
 
@@ -799,13 +864,10 @@ a {
     width: 100%;
   }
 
-  .homePageProjectTitle {
-    font-size: 30px;
-  }
-
   .homePageProjectDescription {
-    font-size: 22px;
-    line-height: 38px;
+    width: 80%;
+    font-size: 20px;
+    line-height: 34px;
   }
 
   #projectAnchor {
@@ -829,12 +891,12 @@ a {
   }
 
   .homePageProjectTitle {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .homePageProjectDescription {
-    font-size: 20px;
-    line-height: 34px;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .homePageProject {
@@ -858,13 +920,12 @@ a {
   }
 
   .homePageProjectTitle {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .homePageProjectDescription {
-    font-size: 18px;
-    line-height: 30px;
-    width: 80%;
+    font-size: 16px;
+    line-height: 26px;
   }
 
   .homePageProject {
@@ -886,6 +947,12 @@ a {
   }
 }
 
+@media (max-width: 450px) {
+  .homePageProjectTitle {
+    font-size: 22px;
+  }
+}
+
 @media (max-width: 425px) {
   .techIconHP {
     width: 25px;
@@ -904,8 +971,8 @@ a {
 
 @media (max-width: 400px) {
   .homePageProjectDescription {
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 13px;
+    line-height: 23px;
   }
 }
 
