@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'Viditia',
-    slug: 'viditia',
+    localSlug: 'viditia',
     imageURL: 'viditia.jpg',
     projectLink: 'https://viditia-cf976.web.app/',
     teaser:
@@ -25,7 +25,7 @@ export const projects = [
   },
   {
     title: 'Grace Chopper',
-    slug: 'gracechopper',
+    localSlug: 'gracechopper',
     imageURL: 'gracechopper.jpg',
     projectLink: 'https://gracechopper.herokuapp.com/',
     teaser:
@@ -49,7 +49,7 @@ export const projects = [
   },
   {
     title: 'Window',
-    slug: 'window',
+    localSlug: 'window',
     imageURL: 'window.jpg',
     projectLink: 'https://github.com/dereklouis/window',
     teaser:
@@ -62,5 +62,19 @@ export const projects = [
       'Using only one dependency (Axios), Window transforms a GET request to OpenWeatherMap API, into a visual rendering. Launch window, and pick your city. Boston, Chicago, Los Angeles, or New York City will render matching skylines, however, any city can be launched with a generic skyline. Once you luanch your city, Window takes the UNIX time for sunrise, sunset, and the moment the code executes, to position the sun on one of 130 possible locations along a progress arc. Once, the sun position has been determined, all other major weather conditions such as day/night, clouds, rain and snow are set.',
     description2:
       'City selections on Window will persist between sessions thanks to local storage. Want to watch the sunset through your virtual window? Just leave Window open, and it will update once every 60 seconds.',
+  },
+  {
+    title: 'D3.js Tutorial',
+    localSlug: null,
+    imageURL: 'medium.jpg',
+    projectLink:
+      'https://thedereklouis.medium.com/add-an-interactive-chart-to-your-react-app-using-d3-v6-6c79f14a05f5',
+    teaser:
+      'A Medium article with an accompanying code demo, written to walk you through your first D3 chart',
+    subTitle: null,
+    technologies: ['react', 'd3'],
+    videoURL: null,
+    description: null,
+    description2: null,
   },
 ];

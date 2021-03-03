@@ -19,7 +19,7 @@ a {
   color: black;
 }
 
-#homePageProjectsContainer {
+#workPageProjectsContainer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -27,7 +27,7 @@ a {
   margin: 0px 0px 25px 0px;
 }
 
-.homePageProject {
+.workPageProject {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +35,7 @@ a {
   margin: 50px;
 }
 
-.homePageProjectPhoto {
+.workPageProjectPhoto {
   width: 600px;
   height: auto;
   border-radius: 5px;
@@ -44,17 +44,17 @@ a {
   display: block;
 }
 
-.homePageProjectTitle {
+.workPageProjectTitle {
   font-size: 28px;
   font-family: 'Open Sans', sans-serif;
   margin: 0px 0px 20px 0px;
 }
 
-.homePagePhotoWrapper {
+.workPagePhotoWrapper {
   position: relative;
 }
 
-.homePagePhotoMask {
+.workPagePhotoMask {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -72,12 +72,12 @@ a {
   transition: 0.5s ease;
 }
 
-.homePagePhotoWrapper:hover .homePagePhotoMask {
+.workPagePhotoWrapper:hover .workPagePhotoMask {
   opacity: 0.95;
   cursor: pointer;
 }
 
-.homePageProjectDescription {
+.workPageProjectDescription {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   width: 65%;
@@ -87,7 +87,7 @@ a {
   margin: auto 0px 0px 0px;
 }
 
-.homePageIconRow {
+.workPageIconRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -542,28 +542,28 @@ a {
 }
 
 @media (max-width: 1550px) {
-  #homePageProjectsContainer {
+  #workPageProjectsContainer {
     width: 1300px;
   }
 
-  .homePageProject {
+  .workPageProject {
     margin: 40px;
   }
 
-  .homePageProjectPhoto {
+  .workPageProjectPhoto {
     width: 500px;
   }
 
-  .homePageProjectTitle {
+  .workPageProjectTitle {
     font-size: 24px;
   }
 
-  .homePageProjectDescription {
+  .workPageProjectDescription {
     font-size: 18px;
     line-height: 31px;
   }
 
-  .homePageIconRow {
+  .workPageIconRow {
     width: 90%;
   }
 
@@ -583,15 +583,15 @@ a {
     margin: 0px 50px 0px 0px;
   }
 
-  #homePageProjectsContainer {
+  #workPageProjectsContainer {
     width: 1100px;
   }
 
-  .homePageProject {
+  .workPageProject {
     margin: 30px;
   }
 
-  .homePageProjectPhoto {
+  .workPageProjectPhoto {
     width: 475px;
   }
 
@@ -607,28 +607,28 @@ a {
 }
 
 @media (max-width: 1100px) {
-  #homePageProjectsContainer {
+  #workPageProjectsContainer {
     width: 625px;
   }
 
-  .homePageProject {
+  .workPageProject {
     margin: 50px;
   }
 
-  .homePageProjectPhoto {
+  .workPageProjectPhoto {
     width: 600px;
   }
 
-  .homePageProjectTitle {
+  .workPageProjectTitle {
     font-size: 28px;
   }
 
-  .homePageProjectDescription {
+  .workPageProjectDescription {
     font-size: 22px;
     line-height: 38px;
   }
 
-  .homePageIconRow {
+  .workPageIconRow {
     width: 80%;
   }
 
@@ -670,24 +670,24 @@ a {
 }
 
 @media (max-width: 825px) {
-  #homePageProjectsContainer {
+  #workPageProjectsContainer {
     width: 525px;
   }
 
-  .homePageProject {
+  .workPageProject {
     margin: 40px;
   }
 
-  .homePageProjectPhoto {
+  .workPageProjectPhoto {
     width: 475px;
   }
 
-  .homePageProjectDescription {
+  .workPageProjectDescription {
     font-size: 20px;
     line-height: 34px;
   }
 
-  .homePageIconRow {
+  .workPageIconRow {
     width: 90%;
   }
 
@@ -853,19 +853,19 @@ a {
     transform: rotate(-45deg) translate(35px, 35px);
   }
 
-  #homePageProjectsContainer {
+  #workPageProjectsContainer {
     width: 80%;
   }
 
-  .homePageProject {
+  .workPageProject {
     margin: 30px 0px 30px 0px;
   }
 
-  .homePageProjectPhoto {
+  .workPageProjectPhoto {
     width: 100%;
   }
 
-  .homePageProjectDescription {
+  .workPageProjectDescription {
     width: 80%;
     font-size: 20px;
     line-height: 34px;
@@ -891,16 +891,16 @@ a {
     margin: 20px;
   }
 
-  .homePageProjectTitle {
+  .workPageProjectTitle {
     font-size: 26px;
   }
 
-  .homePageProjectDescription {
+  .workPageProjectDescription {
     font-size: 18px;
     line-height: 30px;
   }
 
-  .homePageProject {
+  .workPageProject {
     margin: 25px 0px 25px 0px;
   }
 }
@@ -920,16 +920,16 @@ a {
     font-size: 27px;
   }
 
-  .homePageProjectTitle {
+  .workPageProjectTitle {
     font-size: 24px;
   }
 
-  .homePageProjectDescription {
+  .workPageProjectDescription {
     font-size: 16px;
     line-height: 26px;
   }
 
-  .homePageProject {
+  .workPageProject {
     margin: 20px 0px 20px 0px;
   }
 
@@ -949,7 +949,7 @@ a {
 }
 
 @media (max-width: 450px) {
-  .homePageProjectTitle {
+  .workPageProjectTitle {
     font-size: 22px;
   }
 }
@@ -971,14 +971,14 @@ a {
 }
 
 @media (max-width: 400px) {
-  .homePageProjectDescription {
+  .workPageProjectDescription {
     font-size: 13px;
     line-height: 23px;
   }
 }
 
 @media (max-width: 375px) {
-  #homePageProjectsContainer {
+  #workPageProjectsContainer {
     width: 288px;
   }
 }

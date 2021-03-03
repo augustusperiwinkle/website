@@ -39,14 +39,14 @@ export class NavBar extends React.Component {
       const navBarWrap = document.getElementById('navBarWrap');
       const name = document.getElementById('name');
       const burger = document.getElementById('burger');
-      const navItemHome = document.getElementById('navItemHome');
+      const navItemWork = document.getElementById('navItemWork');
       const navItemAbout = document.getElementById('navItemAbout');
       const navItemContact = document.getElementById('navItemContact');
       if (window.scrollY <= 15 && userScrolled) {
         navBarWrap.className = 'navBarMain';
         name.style.color = 'black';
         burger.className = 'menu-btn__burger_Black';
-        navItemHome.className = 'navItemMain';
+        navItemWork.className = 'navItemMain';
         navItemAbout.className = 'navItemMain';
         navItemContact.className = 'navItemMain';
       } else if (window.scrollY > 15) {
@@ -54,7 +54,7 @@ export class NavBar extends React.Component {
         userScrolled = true;
         name.style.color = 'white';
         burger.className = 'menu-btn__burger_White';
-        navItemHome.className = 'navItemAlt';
+        navItemWork.className = 'navItemAlt';
         navItemAbout.className = 'navItemAlt';
         navItemContact.className = 'navItemAlt';
       }
@@ -75,11 +75,11 @@ export class NavBar extends React.Component {
             <div className="menu-btn" onClick={this.handleClick}>
               <div id="burger" className="menu-btn__burger_Black"></div>
             </div>
-            <Link className="logoLink" to="/home" onClick={this.closeMenu}>
+            <Link className="logoLink" to="/work" onClick={this.closeMenu}>
               <div id="name">Derek Louis</div>
             </Link>
-            <Link className="navItemMain" id="navItemHome" to="/home">
-              <p>Home</p>
+            <Link className="navItemMain" id="navItemWork" to="/work">
+              <p>Work</p>
             </Link>
             <Link className="navItemMain" id="navItemAbout" to="/about">
               <p>About</p>

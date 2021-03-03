@@ -32,9 +32,9 @@ export class Project extends React.Component {
     });
   }
   render() {
-    const projectSlug = this.props.match.params.project;
+    const projectLocalSlug = this.props.match.params.project;
     const myProject = projects.filter(
-      (project) => project.slug === projectSlug
+      (project) => project.localSlug === projectLocalSlug
     )[0];
     return myProject === undefined ? (
       <>{this.props.history.push('/404error')}</>

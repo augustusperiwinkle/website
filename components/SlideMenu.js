@@ -9,8 +9,8 @@ export class SlideMenu extends React.Component {
     return (
       <div id="slideMenuWrapper" className="menuHidden">
         <div id="SMLinkBox">
-          <Link className="SMLink" to="/home" onClick={this.props.closeMenu}>
-            <p id="SMItem">Home</p>
+          <Link className="SMLink" to="/work" onClick={this.props.closeMenu}>
+            <p id="SMItem">Work</p>
           </Link>
           <Link className="SMLink" to="/about" onClick={this.props.closeMenu}>
             <p id="SMItem">About</p>
