@@ -2,8 +2,6 @@ const React = require('react');
 const { Link } = require('react-router-dom');
 const { SlideMenu } = require('./SlideMenu');
 
-let userScrolled = false;
-
 export class NavBar extends React.Component {
   constructor() {
     super();
@@ -35,30 +33,6 @@ export class NavBar extends React.Component {
     this.setState({ menuOpen: false });
   }
   render() {
-    window.onscroll = () => {
-      const navBarWrap = document.getElementById('navBarWrap');
-      const name = document.getElementById('name');
-      const burger = document.getElementById('burger');
-      const navItemWork = document.getElementById('navItemWork');
-      const navItemAbout = document.getElementById('navItemAbout');
-      const navItemContact = document.getElementById('navItemContact');
-      if (window.scrollY <= 15 && userScrolled) {
-        navBarWrap.className = 'navBarMain';
-        name.style.color = 'black';
-        burger.className = 'menu-btn__burger_Black';
-        navItemWork.className = 'navItemMain';
-        navItemAbout.className = 'navItemMain';
-        navItemContact.className = 'navItemMain';
-      } else if (window.scrollY > 15) {
-        navBarWrap.className = 'navBarAlt';
-        userScrolled = true;
-        name.style.color = 'white';
-        burger.className = 'menu-btn__burger_White';
-        navItemWork.className = 'navItemAlt';
-        navItemAbout.className = 'navItemAlt';
-        navItemContact.className = 'navItemAlt';
-      }
-    };
     window.onresize = () => {
       const slideMenu = document.getElementById('slideMenuWrapper');
       if (window.innerWidth > 600) {
@@ -70,21 +44,21 @@ export class NavBar extends React.Component {
     return (
       <>
         <SlideMenu closeMenu={this.closeMenu} />
-        <div id="navBarWrap">
+        <div id="navBarWrap" className="navBarMain">
           <div id="navBar">
             <div className="menu-btn" onClick={this.handleClick}>
-              <div id="burger" className="menu-btn__burger_Black"></div>
+              <div id="burger" className="menu-btn__burger"></div>
             </div>
             <Link className="logoLink" to="/work" onClick={this.closeMenu}>
               <div id="name">Derek Louis</div>
             </Link>
-            <Link className="navItemMain" id="navItemWork" to="/work">
+            <Link className="navItem" to="/work">
               <p>Work</p>
             </Link>
-            <Link className="navItemMain" id="navItemAbout" to="/about">
+            <Link className="navItem" to="/about">
               <p>About</p>
             </Link>
-            <Link className="navItemMain" id="navItemContact" to="/contact">
+            <Link className="navItem" to="/contact">
               <p>Contact</p>
             </Link>
           </div>

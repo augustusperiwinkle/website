@@ -27,7 +27,7 @@ export const WorkPageProject = (props) => {
                 className="workPageProjectPhoto"
               />
               <div className="workPagePhotoMask">
-                <p className="workPageProjectDescription">{myProject.teaser}</p>
+                <p id="workPageProjectDescription">{myProject.teaser}</p>
                 <div className="workPageIconRow">
                   {myProject.technologies.map((technology) => {
                     return (
@@ -52,17 +52,25 @@ export const WorkPageProject = (props) => {
         </>
       ) : (
         <>
-          <a href={myProject.projectLink} target="_blank">
+          <a
+            href={myProject.projectLink}
+            target="_blank"
+            className="workPageProjectLink"
+          >
             <p className="workPageProjectTitle">{myProject.title}</p>
           </a>
-          <a href={myProject.projectLink} target="_blank">
+          <a
+            href={myProject.projectLink}
+            target="_blank"
+            className="workPageProjectLink"
+          >
             <div className="workPagePhotoWrapper">
               <img
                 src={`./photos/${myProject.imageURL}`}
                 className="workPageProjectPhoto"
               />
               <div className="workPagePhotoMask">
-                <p className="workPageProjectDescription">{myProject.teaser}</p>
+                <p id="workPageProjectDescription">{myProject.teaser}</p>
                 <div className="workPageIconRow">
                   {myProject.technologies.map((technology) => {
                     return (
