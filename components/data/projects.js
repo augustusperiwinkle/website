@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Viditia',
     localSlug: 'viditia',
-    imageURL: 'viditia.jpg',
+    imageURLs: ['viditia0.jpg', 'viditia1.jpg', 'viditia2.jpg', 'viditia3.jpg'],
     projectLink: 'https://viditia-cf976.web.app/',
     teaser:
       'A web application where users can participate, visualize and interact with data from polls in a fun and clever way.',
@@ -26,7 +26,7 @@ export const projects = [
   {
     title: 'Grace Chopper',
     localSlug: 'gracechopper',
-    imageURL: 'gracechopper.jpg',
+    imageURLs: ['gracechopper.jpg'],
     projectLink: 'https://gracechopper.herokuapp.com/',
     teaser:
       'An eCommerce store featuring guest & user accounts, OAuth, admin privileges, product filters and more.',
@@ -50,7 +50,14 @@ export const projects = [
   {
     title: 'Window',
     localSlug: 'window',
-    imageURL: 'window.jpg',
+    imageURLs: [
+      'window0.jpg',
+      'window1.jpg',
+      'window2.jpg',
+      'window3.jpg',
+      'window4.jpg',
+      'window5.jpg',
+    ],
     projectLink: 'https://github.com/dereklouis/window',
     teaser:
       'A chrome extension that visually renders the current weather conditions in your city.',
@@ -66,7 +73,7 @@ export const projects = [
   {
     title: 'D3.js Tutorial',
     localSlug: null,
-    imageURL: 'medium.jpg',
+    imageURLs: ['medium.jpg'],
     projectLink:
       'https://thedereklouis.medium.com/add-an-interactive-chart-to-your-react-app-using-d3-v6-6c79f14a05f5',
     teaser:

@@ -23,7 +23,7 @@ export const WorkPageProject = (props) => {
           >
             <div className="workPagePhotoWrapper">
               <img
-                src={`./photos/${myProject.imageURL}`}
+                src={`./photos/${myProject.imageURLs[0]}`}
                 className="workPageProjectPhoto"
               />
               <div className="workPagePhotoMask">
@@ -66,7 +66,7 @@ export const WorkPageProject = (props) => {
           >
             <div className="workPagePhotoWrapper">
               <img
-                src={`./photos/${myProject.imageURL}`}
+                src={`./photos/${myProject.imageURLs[0]}`}
                 className="workPageProjectPhoto"
               />
               <div className="workPagePhotoMask">
