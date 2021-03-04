@@ -25,10 +25,6 @@ export class Project extends React.Component {
       this.setState({
         technology: e.target.id,
       });
-    } else {
-      this.setState({
-        technology: 'Technologies',
-      });
     }
   }
   mouseLeave() {

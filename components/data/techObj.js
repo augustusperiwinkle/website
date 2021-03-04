@@ -1,7 +1,7 @@
 export const techObj = {
   'My Technologies': {
     name: 'My Technologies',
-    style: { color: 'rgb(124, 124, 195)' },
+    style: { color: '#0670b2' },
   },
   Technologies: {
     name: 'Technologies',
