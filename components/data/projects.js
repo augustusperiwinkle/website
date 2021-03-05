@@ -78,7 +78,7 @@ export const projects = [
   {
     title: 'D3.js Tutorial',
     localSlug: null,
-    imageURLs: ['medium.jpg'],
+    imageURLs: ['medium0.jpg'],
     projectLink:
       'https://thedereklouis.medium.com/add-an-interactive-chart-to-your-react-app-using-d3-v6-6c79f14a05f5',
     teaser:
