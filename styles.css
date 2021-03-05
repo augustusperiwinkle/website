@@ -554,6 +554,10 @@ a {
   color: #89cffb;
 }
 
+#contactSpacer {
+  margin: 36px 0px;
+}
+
 @media (max-width: 1550px) {
   #workPageProjectsContainer {
     width: 1300px;
@@ -953,8 +957,12 @@ a {
     width: 25px;
   }
 
+  #contactSpacer {
+    margin: 0px 0px;
+  }
+
   #contactTitle {
-    margin: 0px 0px 25px 0px;
+    margin: 0px 0px 36px 0px;
   }
 
   .toolTip .toolTipText {

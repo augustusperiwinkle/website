@@ -26,7 +26,12 @@ export const projects = [
   {
     title: 'Grace Chopper',
     localSlug: 'gracechopper',
-    imageURLs: ['gracechopper.jpg'],
+    imageURLs: [
+      'gracechopper0.jpg',
+      'gracechopper1.jpg',
+      'gracechopper2.jpg',
+      'gracechopper3.jpg',
+    ],
     projectLink: 'https://gracechopper.herokuapp.com/',
     teaser:
       'An eCommerce store featuring guest & user accounts, OAuth, admin privileges, product filters and more.',
