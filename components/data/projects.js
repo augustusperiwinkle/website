@@ -31,6 +31,8 @@ export const projects = [
       'gracechopper1.jpg',
       'gracechopper2.jpg',
       'gracechopper3.jpg',
+      'gracechopper4.jpg',
+      'gracechopper5.jpg',
     ],
     projectLink: 'https://gracechopper.herokuapp.com/',
     teaser:
