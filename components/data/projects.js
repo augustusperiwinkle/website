@@ -2,7 +2,15 @@ export const projects = [
   {
     title: 'Viditia',
     localSlug: 'viditia',
-    imageURLs: ['viditia0.jpg', 'viditia1.jpg', 'viditia2.jpg', 'viditia3.jpg'],
+    imageURLs: [
+      'viditia0.jpg',
+      'viditia1.jpg',
+      'viditia2.jpg',
+      'viditia3.jpg',
+      'viditia4.jpg',
+      'viditia5.jpg',
+      'viditia6.jpg',
+    ],
     projectLink: 'https://viditia-cf976.web.app/',
     teaser:
       'A web application where users can participate, visualize and interact with data from polls in a fun and clever way.',
