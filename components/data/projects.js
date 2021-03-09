@@ -49,7 +49,7 @@ export const projects = [
       'webpack',
       'babel',
     ],
-    videoURL: null,
+    videoURL: 'https://youtu.be/7SPtPSlAM6A',
     description: `In the market for a fictitious motorcycle? Grace Chopper makes shopping easy by incorporating many of today's most popular features. Product, customer, and order information is stored in our SQL database via Node, PostgreSQL and Sequelize. User sessions persist through express-session, while guest sessions utilize local storage for persistence. Want user features like past order history and autofill on checkout, but don't feel like making an account? Just log in with Google via Passport.js OAuth.`,
     description2:
       'With the additions of product filters for customers, and admin privileges for easy site maintenance, Grace Chopper is just a simple stripe integration (and a couple dozen real life motorcycles) away from making actual sales.',
