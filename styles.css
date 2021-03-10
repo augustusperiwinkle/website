@@ -136,7 +136,7 @@ a {
 }
 
 #aboutContainer {
-  margin: 50px 0px 50px 0px;
+  margin: 50px 0px 75px 0px;
   width: 1050px;
   display: flex;
   flex-direction: column;
@@ -349,7 +349,7 @@ a {
 
 .contactLink {
   text-decoration: none;
-  margin: 25px 0px 50px 0px;
+  margin: 25px 0px 25px 0px;
   font-size: 25px;
   display: flex;
   align-items: center;
@@ -574,6 +574,25 @@ a {
   margin: 0px;
 }
 
+#resume {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  margin: 62px 0px 0px 0px;
+  transition-duration: 0.25s;
+  display: flex;
+  align-items: center;
+}
+
+#resume:hover {
+  color: #0670b2;
+}
+
+#pdfLogo {
+  font-size: 24px;
+  margin: 0px 15px 0px 0px;
+}
+
 @media (max-width: 1550px) {
   #workPageProjectsContainer {
     width: 1300px;
@@ -691,7 +710,7 @@ a {
 
   #aboutContainer {
     width: 650px;
-    margin: 10px 0px 75px 0px;
+    margin: 10px 0px 85px 0px;
   }
 
   #aboutTechTitle {
@@ -902,7 +921,7 @@ a {
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 580px) {
   .techIconAbout {
     margin: 20px;
   }
@@ -918,6 +937,19 @@ a {
 
   .workPageProject {
     margin: 25px 0px 25px 0px;
+  }
+
+  #resume {
+    font-size: 28px;
+    margin: 45px 0px 0px 0px;
+  }
+
+  #pdfLogo {
+    font-size: 21px;
+  }
+
+  #aboutContainer {
+    margin: 10px 0px 60px 0px;
   }
 }
 

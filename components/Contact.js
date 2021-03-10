@@ -33,6 +33,9 @@ export class Contact extends React.Component {
           <i class="far fa-envelope" style={{ 'font-size': '32px' }}></i>
           <p style={{ 'margin-left': '15px' }}>Send me an email</p>
         </a>
+        <p style={{ 'font-size': '28px', 'margin-top': '50px' }}>
+          thedereklouis@gmail.com
+        </p>
       </div>
     );
   }
