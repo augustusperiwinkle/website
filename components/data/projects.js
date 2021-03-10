@@ -2,6 +2,7 @@ export const projects = [
   {
     title: 'Viditia',
     localSlug: 'viditia',
+    team: ['group', 'Team of four developers'],
     imageURLs: [
       'viditia0.jpg',
       'viditia1.jpg',
@@ -34,6 +35,7 @@ export const projects = [
   {
     title: 'Grace Chopper',
     localSlug: 'gracechopper',
+    team: ['group', 'Team of four developers'],
     imageURLs: [
       'gracechopper0.jpg',
       'gracechopper1.jpg',
@@ -65,6 +67,7 @@ export const projects = [
   {
     title: 'Window',
     localSlug: 'window',
+    team: ['solo', 'Sole developer'],
     imageURLs: [
       'window0.jpg',
       'window1.jpg',
@@ -88,6 +91,7 @@ export const projects = [
   {
     title: 'D3.js Tutorial',
     localSlug: null,
+    team: ['solo', 'Sole developer'],
     imageURLs: ['medium0.jpg'],
     projectLink:
       'https://thedereklouis.medium.com/add-an-interactive-chart-to-your-react-app-using-d3-v6-6c79f14a05f5',

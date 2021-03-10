@@ -558,6 +558,22 @@ a {
   margin: 36px 0px;
 }
 
+.teamDiv {
+  display: flex;
+  align-items: center;
+  margin: 16px 0px;
+}
+
+.teamIcon {
+  margin: 0px 15px 0px 0px;
+  font-size: 22px;
+}
+
+.teamDescription {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+}
+
 @media (max-width: 1550px) {
   #workPageProjectsContainer {
     width: 1300px;
@@ -740,6 +756,9 @@ a {
   }
   #descriptionImageContainer {
     margin: 25px 0px 125px 0px;
+  }
+  .teamDiv {
+    margin: 25px 0px 6px 0px;
   }
 }
 

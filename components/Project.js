@@ -2,6 +2,7 @@ const React = require('react');
 const { Footer } = require('./Footer');
 const { projects } = require('./data/projects');
 const { techObj } = require('./data/techObj');
+const { teamIcons } = require('./data/teamIcons');
 
 let slideIndex = 1;
 
@@ -64,6 +65,10 @@ export class Project extends React.Component {
           <a href={myProject.projectLink} id="projectAnchor" target="_blank">
             <h1 id="projectTitle">{myProject.title}</h1>
           </a>
+          <div className="teamDiv">
+            <div className="teamIcon">{teamIcons[myProject.team[0]]}</div>
+            <p className="teamDescription">{myProject.team[1]}</p>
+          </div>
           <p id="projectSubtitle">{myProject.subTitle}</p>
           <div id="videoMaster">
             {myProject.videoURL && (
