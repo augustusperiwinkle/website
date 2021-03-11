@@ -184,15 +184,19 @@ a {
   min-width: 375px;
 }
 
-.fullPageContainer {
+.fullPageContainer,
+.contactContainer {
   margin: 100px 0px 0px 0px;
   width: 100vw;
   max-width: 100%;
   min-width: 375px;
-  min-height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.fullPageContainer {
+  min-height: 85vh;
 }
 
 .navItem {

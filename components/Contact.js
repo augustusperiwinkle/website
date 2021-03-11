@@ -9,7 +9,7 @@ export class Contact extends React.Component {
   }
   render() {
     return (
-      <div className="fullPageContainer">
+      <div className="contactContainer">
         <div id="contactSpacer"></div>
         <h1 id="contactTitle">Let's get in touch!</h1>
         <a
