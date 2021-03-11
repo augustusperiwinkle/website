@@ -349,8 +349,10 @@ a {
 
 .contactLink {
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
   margin: 25px 0px 25px 0px;
   font-size: 25px;
+  font-weight: 300;
   display: flex;
   align-items: center;
 }
@@ -591,6 +593,13 @@ a {
 #pdfLogo {
   font-size: 24px;
   margin: 0px 15px 0px 0px;
+}
+
+#email {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 1550px) {
@@ -994,6 +1003,22 @@ a {
     width: 60px;
     font-size: 9px;
   }
+
+  .contactLink {
+    margin: 5px 0px 5px 0px;
+  }
+
+  #email {
+    margin-top: 30px;
+  }
+
+  #contactSpacer {
+    margin: 0px 0px;
+  }
+
+  #contactTitle {
+    margin: 0px 0px 36px 0px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1005,14 +1030,6 @@ a {
 @media (max-width: 425px) {
   .techIconHP {
     width: 25px;
-  }
-
-  #contactSpacer {
-    margin: 0px 0px;
-  }
-
-  #contactTitle {
-    margin: 0px 0px 36px 0px;
   }
 
   .toolTip .toolTipText {
