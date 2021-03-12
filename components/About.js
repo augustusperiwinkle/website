@@ -143,11 +143,7 @@ export class About extends React.Component {
                 id="heroku"
               />
             </div>
-            <a
-              href="../Derek_Louis_Resume.docx.pdf"
-              target="_blank"
-              id="resume"
-            >
+            <a href="../Derek_Louis_Resume.pdf" target="_blank" id="resume">
               <i className="fas fa-file-pdf" id="pdfLogo"></i>View Resume
             </a>
           </div>
