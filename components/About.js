@@ -40,6 +40,7 @@ export class About extends React.Component {
                 manager and professional musician, Derek brings a high level of
                 leadership, adaptability and creativity to any dev team.
                 <br />
+                <br />
                 When Derek isn't coding, he's most likely learning about or
                 enjoying astronomy, bonsai, books, cycling, dark chocolate,
                 music, nature, podcasts, science, telescopes, traveling, video
