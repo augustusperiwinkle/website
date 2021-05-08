@@ -34,17 +34,16 @@ export class About extends React.Component {
             <div id="textAndImage">
               <img src="./photos/codePicSmall.jpg" id="myPhoto" />
               <div className="aboutPageText">
-                Derek Louis is an emerging software developer with a certificate
-                in software engineering from Fullstack Academy. Before 2020,
-                Derek had been working as a professional musician, and began
-                teaching himself the basics of JS, HTML, and CSS. After
-                completing a few personal web projects, he decided to take his
-                skills to a serious level and started the course at Fullstack.
-                Derek has excelled at developing a full stack Javascript tech
-                stack incorporating Node, React-Redux, Express, Sequelize and
-                more. He is interested in pursuing a full stack or front end
-                role in fields ranging from music and entertainment to science
-                and education.
+                Derek Louis is a passionate software developer with a
+                certificate in fullstack software engineering from Fullstack
+                Academy. After traveling the world for 10 years as a tour
+                manager and professional musician, Derek brings a high level of
+                leadership, adaptability and creativity to any dev team.
+                <br />
+                When Derek isn't coding, he's most likely learning about or
+                enjoying astronomy, bonsai, books, cycling, dark chocolate,
+                music, nature, podcasts, science, telescopes, traveling, video
+                games and watches.
               </div>
             </div>
             <h1
