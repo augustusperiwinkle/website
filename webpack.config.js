@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'production',
   entry: path.resolve(__dirname, 'components'),
   output: {
     path: path.resolve(__dirname),

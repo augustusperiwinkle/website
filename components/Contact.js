@@ -11,7 +11,11 @@ export class Contact extends React.Component {
     return (
       <div className="contactContainer">
         <div id="contactSpacer"></div>
-        <h1 id="contactTitle">Let's get in touch!</h1>
+        <div id="contactTitleContainer">
+          <h1 id="contactTitle" style={{ margin: '0px' }}>
+            Let's get in touch!
+          </h1>
+        </div>
         <a
           href="https://github.com/dereklouis"
           className="gitHubIcon contactLink"
