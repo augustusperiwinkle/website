@@ -152,3 +152,15 @@
     visibility: hidden;
   }
 }
+
+@media (max-width: 350px) {
+  #name {
+    margin-right: 12vw;
+  }
+}
+
+@media (max-width: 320px) {
+  #name {
+    margin-right: 20vw;
+  }
+}
