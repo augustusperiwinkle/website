@@ -103,6 +103,19 @@ const projects = [
     description: null,
     description2: null,
   },
+  {
+    title: `Dana Kenney's Website`,
+    localSlug: 'danakenneywebsite',
+    team: ['solo', 'Sole developer'],
+    imageURLs: ['danasite0.jpg', 'danasite1.jpg', 'danasite2.jpg'],
+    projectLink: 'https://danakenney.com',
+    teaser: `A fully responsive recreation of the Squarespace 'Degraw' template.`,
+    subTitle: `A fully responsive recreation of the Squarespace 'Degraw' template, using no external styling libraries.`,
+    technologies: ['react', 'reactrouter', 'css3', 'git', 'github'],
+    videoURL: null,
+    description: `No external styling libraries were used in this fully responsive recreation of the Squarespace 'Degraw' template. This create-react-app based site was deployed to github pages.`,
+    description2: null,
+  },
 ];
 
 export default projects;
