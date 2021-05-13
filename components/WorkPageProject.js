@@ -71,7 +71,7 @@ const WorkPageProject = (props) => {
                 className="workPageProjectPhoto"
               />
               <div className="workPagePhotoMask">
-                <p id="workPageProjectDescription">{myProject.teaser}</p>
+                <p className="workPageProjectDescription">{myProject.teaser}</p>
                 <div className="workPageIconRow">
                   {myProject.technologies.map((technology) => {
                     return (

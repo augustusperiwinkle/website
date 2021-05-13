@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SlideMenu from './SlideMenu';
+import './styles/NavBar.css';
 
 export default class NavBar extends React.Component {
   constructor() {

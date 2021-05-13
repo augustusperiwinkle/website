@@ -3,6 +3,8 @@ import Footer from './Footer';
 import projects from './data/projects';
 import techObj from './data/techObj';
 import teamIcons from './data/teamIcons';
+import Credit from './Credit';
+import './styles/Project.css';
 
 let slideIndex = 1;
 
@@ -130,6 +132,7 @@ export default class Project extends React.Component {
           </div>
         </div>
         <Footer />
+        <Credit />
       </>
     );
   }

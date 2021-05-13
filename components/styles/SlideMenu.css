@@ -1,0 +1,46 @@
+#slideMenuWrapper {
+  /* background-color: rgba(255, 255, 255, 0.95); */
+  background-color: rgba(255, 140, 0, 0.57);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: none;
+  visibility: hidden;
+  backdrop-filter: blur(5px);
+}
+
+.menuHidden {
+  display: none;
+  visibility: hidden;
+  right: 100%;
+}
+
+#SMLinkBox {
+  margin: 100px 0px 0px 50px;
+}
+
+.SMLink {
+  text-decoration: none;
+  color: #0670b2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  margin: 25px 0px 0px 25px;
+  transition-duration: 0.25s;
+}
+
+.SMLink:hover {
+  color: #0670b2;
+}
+
+.SMItem {
+  margin: 32px 0px;
+}
+
+@media (max-width: 600px) {
+  #slideMenuWrapper {
+    visibility: visible;
+    display: inline-flex;
+  }
+}

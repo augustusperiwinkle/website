@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './styles/SlideMenu.css';
 
 export default class SlideMenu extends React.Component {
   constructor() {

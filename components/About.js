@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from './Footer';
 import techObj from './data/techObj';
 import Credit from './Credit';
+import './styles/About.css';
 
 export default class About extends React.Component {
   constructor() {
