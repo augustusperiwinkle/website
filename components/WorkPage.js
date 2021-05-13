@@ -1,9 +1,11 @@
-const React = require('react');
-const { Footer } = require('./Footer');
-const { WorkPageProject } = require('./WorkPageProject');
-const { projects } = require('./data/projects');
+import React from 'react';
+import Footer from './Footer';
+import WorkPageProject from './WorkPageProject';
+import projects from './data/projects';
+import Credit from './Credit';
+import './styles/WorkPage.css';
 
-export class WorkPage extends React.Component {
+export default class WorkPage extends React.Component {
   constructor() {
     super();
   }
@@ -21,6 +23,7 @@ export class WorkPage extends React.Component {
           </div>
         </div>
         <Footer />
+        <Credit />
       </>
     );
   }

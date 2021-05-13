@@ -1,0 +1,43 @@
+#workPageProjectsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1500px;
+  margin: 0px 0px 25px 0px;
+}
+
+@media (max-width: 1550px) {
+  #workPageProjectsContainer {
+    width: 1300px;
+  }
+}
+
+@media (max-width: 1225px) {
+  #workPageProjectsContainer {
+    width: 1100px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #workPageProjectsContainer {
+    width: 625px;
+  }
+}
+
+@media (max-width: 825px) {
+  #workPageProjectsContainer {
+    width: 525px;
+  }
+}
+
+@media (max-width: 600px) {
+  #workPageProjectsContainer {
+    width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  #workPageProjectsContainer {
+    width: 288px;
+  }
+}

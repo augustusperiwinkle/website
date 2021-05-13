@@ -1,7 +1,7 @@
-const React = require('react');
-const { Link } = require('react-router-dom');
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export class SlideMenu extends React.Component {
+export default class SlideMenu extends React.Component {
   constructor() {
     super();
   }
@@ -10,13 +10,13 @@ export class SlideMenu extends React.Component {
       <div id="slideMenuWrapper" className="menuHidden">
         <div id="SMLinkBox">
           <Link className="SMLink" to="/work" onClick={this.props.closeMenu}>
-            <p id="SMItem">Work</p>
+            <p className="SMItem">Work</p>
           </Link>
           <Link className="SMLink" to="/about" onClick={this.props.closeMenu}>
-            <p id="SMItem">About</p>
+            <p className="SMItem">About</p>
           </Link>
           <Link className="SMLink" to="/contact" onClick={this.props.closeMenu}>
-            <p id="SMItem">Contact</p>
+            <p className="SMItem">Contact</p>
           </Link>
         </div>
       </div>

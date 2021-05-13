@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/dereklouis/dereklouis.github.io#readme",
   "devDependencies": {
-    "@babel/preset-react": "^7.12.13"
+    "@babel/preset-react": "^7.12.13",
+    "css-loader": "^5.2.4",
+    "style-loader": "^2.0.0"
   },
   "dependencies": {
     "@babel/core": "^7.12.17",

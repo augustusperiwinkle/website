@@ -1,12 +1,12 @@
-const React = require('react');
-const { Footer } = require('./Footer');
-const { projects } = require('./data/projects');
-const { techObj } = require('./data/techObj');
-const { teamIcons } = require('./data/teamIcons');
+import React from 'react';
+import Footer from './Footer';
+import projects from './data/projects';
+import techObj from './data/techObj';
+import teamIcons from './data/teamIcons';
 
 let slideIndex = 1;
 
-export class Project extends React.Component {
+export default class Project extends React.Component {
   constructor() {
     super();
     this.state = {

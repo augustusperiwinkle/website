@@ -1,13 +1,16 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
-const { WorkPage } = require('./WorkPage');
-const { Contact } = require('./Contact');
-const { About } = require('./About');
-const { Project } = require('./Project');
-const { ErrorPage } = require('./ErrorPage');
+import WorkPage from './WorkPage';
+import Contact from './Contact';
+import About from './About';
+import Project from './Project';
+import ErrorPage from './ErrorPage';
 
-export class Routes extends React.Component {
+export default class Routes extends React.Component {
+  constructor() {
+    super();
+  }
   render() {
     return (
       <>

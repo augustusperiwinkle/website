@@ -1,9 +1,10 @@
-const React = require('react');
-const { Link } = require('react-router-dom');
-const { projects } = require('./data/projects');
-const { techObj } = require('./data/techObj');
+import React from 'react';
+import { Link } from 'react-router-dom';
+import projects from './data/projects';
+import techObj from './data/techObj';
+import './styles/WorkPageProject.css';
 
-export const WorkPageProject = (props) => {
+const WorkPageProject = (props) => {
   const { title } = props;
   const myProject = projects.filter((project) => project.title === title)[0];
 
@@ -27,7 +28,7 @@ export const WorkPageProject = (props) => {
                 className="workPageProjectPhoto"
               />
               <div className="workPagePhotoMask">
-                <p id="workPageProjectDescription">{myProject.teaser}</p>
+                <p className="workPageProjectDescription">{myProject.teaser}</p>
                 <div className="workPageIconRow">
                   {myProject.technologies.map((technology) => {
                     return (
@@ -97,3 +98,5 @@ export const WorkPageProject = (props) => {
     </div>
   );
 };
+
+export default WorkPageProject;

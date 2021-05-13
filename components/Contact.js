@@ -1,6 +1,6 @@
-const React = require('react');
+import React from 'react';
 
-export class Contact extends React.Component {
+export default class Contact extends React.Component {
   constructor() {
     super();
   }
@@ -38,6 +38,9 @@ export class Contact extends React.Component {
           <p style={{ 'margin-left': '15px' }}>Send me an email</p>
         </a>
         <p id="email">thedereklouis@gmail.com</p>
+        <div id="contactCreditContainer">
+          <p id="contactCredit">Website coded by Derek Louis, 2021</p>
+        </div>
       </div>
     );
   }

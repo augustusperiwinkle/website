@@ -1,4 +1,4 @@
-export const projects = [
+const projects = [
   {
     title: 'Viditia',
     localSlug: 'viditia',
@@ -104,3 +104,5 @@ export const projects = [
     description2: null,
   },
 ];
+
+export default projects;

@@ -1,4 +1,4 @@
-export const techObj = {
+const techObj = {
   'My Technologies': {
     name: 'My Technologies',
     style: { color: '#0670b2' },
@@ -96,3 +96,5 @@ export const techObj = {
     style: { color: '#56D616' },
   },
 };
+
+export default techObj;

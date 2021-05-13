@@ -1,8 +1,9 @@
-const React = require('react');
-const { Footer } = require('./Footer');
-const { techObj } = require('./data/techObj');
+import React from 'react';
+import Footer from './Footer';
+import techObj from './data/techObj';
+import Credit from './Credit';
 
-export class About extends React.Component {
+export default class About extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -149,6 +150,7 @@ export class About extends React.Component {
           </div>
         </div>
         <Footer />
+        <Credit />
       </>
     );
   }

@@ -1,8 +1,8 @@
-const React = require('react');
-const { Link } = require('react-router-dom');
-const { SlideMenu } = require('./SlideMenu');
+import React from 'react';
+import { Link } from 'react-router-dom';
+import SlideMenu from './SlideMenu';
 
-export class NavBar extends React.Component {
+export default class NavBar extends React.Component {
   constructor() {
     super();
     this.state = {
