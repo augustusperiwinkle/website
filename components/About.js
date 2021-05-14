@@ -36,11 +36,11 @@ export default class About extends React.Component {
             <div id="textAndImage">
               <img src="./photos/codePicSmall.jpg" id="myPhoto" />
               <div className="aboutPageText">
-                Derek Louis is a passionate software developer with a
-                certificate in fullstack software engineering from Fullstack
-                Academy. After traveling the world for 10 years as a tour
-                manager and professional musician, Derek brings a high level of
-                leadership, adaptability and creativity to any dev team.
+                Derek Louis is a passionate software engineer with a certificate
+                in fullstack software engineering from Fullstack Academy. After
+                traveling the world for 10 years as a tour manager and
+                professional musician, Derek brings a high level of leadership,
+                adaptability and creativity to any dev team.
                 <br />
                 <br />
                 When Derek isn't coding, he's most likely learning about or
