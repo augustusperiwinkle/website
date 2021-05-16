@@ -11,13 +11,12 @@ export default class Animation extends React.Component {
     container.addEventListener('animationend', function (e) {
       if (e.target.id === 'animationContainer') {
         container.className = 'animationEnd';
+        localStorage.setItem('animationPlayed', 'true');
       }
     });
   }
 
   render() {
-    localStorage.setItem('animationPlayed', 'true');
-
     return (
       <div id="animationContainer" className="animationRun">
         <div id="animationNameContainer">
