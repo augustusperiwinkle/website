@@ -58,3 +58,322 @@ a {
   transform: scale(1.05);
   color: #ea4335;
 }
+
+/* ANIMATION */
+
+@keyframes container {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#animationContainer {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  animation-name: container;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1.75s;
+  animation-delay: 4.5s;
+  animation-timing-function: ease-out;
+}
+
+.animationRun {
+  display: flex;
+  background-color: white;
+}
+
+.animationEnd {
+  display: none;
+}
+
+#animationNameContainer {
+  position: relative;
+}
+
+@keyframes flashBlue {
+  0% {
+    color: white;
+  }
+  50% {
+    color: rgb(35, 35, 35);
+  }
+  100% {
+    color: #89cffb;
+  }
+}
+
+#animationName {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 75px;
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  animation-name: flashBlue;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.animationSlider {
+  position: absolute;
+}
+
+@keyframes left {
+  0% {
+    margin: 0px 0px 0px 0px;
+  }
+  100% {
+    margin: 0px 0px 0px -250px;
+  }
+}
+
+@keyframes up {
+  0% {
+    margin: 0px 0px 0px 0px;
+  }
+  100% {
+    margin: -150px 0px 0px 0px;
+  }
+}
+
+@keyframes down {
+  0% {
+    margin: 0px 0px 0px 0px;
+  }
+  100% {
+    margin: 150px 0px 0px 0px;
+  }
+}
+
+@keyframes right {
+  0% {
+    margin: 0px 0px 0px 0px;
+  }
+  100% {
+    margin: 0px 0px 0px 250px;
+  }
+}
+
+#as1 {
+  width: 63px;
+  height: 100px;
+  background-color: white;
+  transform: translate(-6px, 10px);
+  border-radius: 0% 50% 50% 50%;
+  animation-name: left;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0.25s;
+}
+
+#as2 {
+  width: 45px;
+  height: 95px;
+  background-color: white;
+  transform: translate(55px, 15px) skewy(50deg);
+  animation-name: up;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+}
+
+#as3 {
+  width: 30px;
+  height: 80px;
+  background-color: white;
+  transform: translate(100px, 7px) skewy(-50deg);
+  animation-name: down;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0.55s;
+}
+
+#as4 {
+  width: 41px;
+  height: 95px;
+  background-color: white;
+  transform: translate(130px, 17px) skewy(50deg);
+  animation-name: up;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+}
+
+#as5 {
+  width: 45px;
+  height: 115px;
+  background-color: white;
+  transform: translate(170px, -10px) skewy(-50deg);
+  animation-name: down;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0.85s;
+}
+
+#as6 {
+  width: 40px;
+  height: 95px;
+  background-color: white;
+  transform: translate(229px, 17px) skewy(50deg);
+  animation-name: up;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+#as7 {
+  width: 46px;
+  height: 90px;
+  background-color: white;
+  transform: translate(268px, 11px) skewy(-50deg);
+  animation-name: down;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1.15s;
+}
+
+#as8 {
+  width: 46px;
+  height: 95px;
+  background-color: white;
+  transform: translate(313px, 12px) skewy(50deg);
+  animation-name: up;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1.3s;
+}
+
+#as9 {
+  width: 20px;
+  height: 85px;
+  background-color: white;
+  transform: translate(359px, 10px) skewy(-50deg);
+  animation-name: down;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1.45s;
+}
+
+#as10 {
+  width: 45px;
+  height: 80px;
+  background-color: white;
+  transform: translate(375px, 18px);
+  border-radius: 50% 50% 0% 50%;
+  animation-name: right;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1.6s;
+}
+
+#sweContainer {
+  z-index: 15;
+  font-family: 'Roboto', sans-serif;
+  margin: 36px 0px 44px 0px;
+  position: relative;
+}
+
+#swe {
+  margin: 0px;
+  font-size: 22px;
+  color: rgb(45, 45, 45);
+}
+
+#cityContainer {
+  z-index: 15;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  position: relative;
+}
+
+#city {
+  margin: 0px;
+  font-size: 16px;
+  color: rgb(50, 50, 50);
+}
+
+#as11 {
+  width: 215px;
+  height: 20px;
+  background-color: white;
+  transform: translate(-15px, -5px) skewx(-40deg);
+  animation-name: right;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1.75s;
+  animation-delay: 2s;
+}
+
+#as12 {
+  width: 215px;
+  height: 20px;
+  background-color: white;
+  transform: translate(-15px, 15px) skewx(40deg);
+  animation-name: left;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1.75s;
+  animation-delay: 2s;
+}
+
+@keyframes smallUp {
+  0% {
+    margin: 0px 0px 0px 0px;
+  }
+  100% {
+    margin: -15px 0px 0px 0px;
+  }
+}
+
+@keyframes smallDown {
+  0% {
+    margin: 0px 0px 0px 0px;
+  }
+  100% {
+    margin: 15px 0px 0px 0px;
+  }
+}
+
+#as13 {
+  width: 135px;
+  height: 17px;
+  background-color: white;
+  transform: translate(-20px, -6px);
+  animation-name: smallUp;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 3.25s;
+}
+
+#as14 {
+  width: 135px;
+  height: 17px;
+  background-color: white;
+  transform: translate(-20px, 11px);
+  animation-name: smallDown;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 3.25s;
+}

@@ -1,0 +1,18 @@
+/* #animationContainer {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(172, 172, 172);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+#animationName {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 75px;
+  color: black;
+} */
