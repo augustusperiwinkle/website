@@ -95,6 +95,10 @@ const techObj = {
     name: 'Chrome Extension',
     style: { color: '#56D616' },
   },
+  socketio: {
+    name: 'Socket.io',
+    style: { color: '#000' },
+  },
 };
 
 export default techObj;

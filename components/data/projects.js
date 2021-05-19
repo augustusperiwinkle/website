@@ -65,6 +65,38 @@ const projects = [
       'With the additions of product filters for customers, and admin privileges for easy site maintenance, Grace Chopper is just a simple stripe integration (and a couple dozen real life motorcycles) away from making actual sales.',
   },
   {
+    title: 'Game Night',
+    localSlug: 'gamenight',
+    team: ['solo', 'Sole developer'],
+    imageURLs: [
+      'gamenight0.jpg',
+      'gamenight1.jpg',
+      'gamenight2.jpg',
+      'gamenight3.jpg',
+      'gamenight4.jpg',
+    ],
+    projectLink: 'https://game--night.herokuapp.com',
+    teaser:
+      'A virtual game night management app utilizing socket.io for realtime database updates.',
+    subTitle:
+      'Game Night is a virtual game night management application that makes hosting game nights quick and easy for everyone.',
+    technologies: [
+      'postgresql',
+      'sequelize',
+      'express',
+      'socketio',
+      'react',
+      'reactrouter',
+      'axios',
+      'heroku',
+    ],
+    videoURL: null,
+    description:
+      'No need to make an account, just enter your name one time and Game Night will remember you thanks to local storage. Once you confirm that you will be attending the game night, you will be assigned a randomized dog avatar and placed in the waiting room. Watch as other players file into the waiting room and fill up the chairs one by one, until the host opens the room. Once in the game room, players have access to the zoom link, any room codes, and three votes to vote for their games of choice. Game night will award 1st, 2nd and 3rd place medals to the games with the highest respective vote counts.',
+    description2:
+      'What if you (the usual host) is away and somebody else needs to take over hosting duties? Game Night makes access to the Admin Panel easy by utilizing a secret key combination to render it, rather than giving certain accounts admin privieges. Game Night utilizes socket.io to ensure that every update to the database is emitted to every connected player in real time.',
+  },
+  {
     title: 'Window',
     localSlug: 'window',
     team: ['solo', 'Sole developer'],
@@ -81,10 +113,18 @@ const projects = [
       'A chrome extension that visually renders the current weather conditions in your city.',
     subTitle:
       'Window is a chrome extension that animates the current weather conditions in your city. No words, no numbers, your own virtual window to the outside world.',
-    technologies: ['chrome-extension', 'axios'],
+    technologies: [
+      'chrome-extension',
+      'axios',
+      'webpack',
+      'javascript',
+      'css3',
+      'html5',
+      'git',
+    ],
     videoURL: 'https://www.youtube.com/embed/V3NOdydimPk',
     description:
-      'Using only one dependency (Axios), Window transforms a GET request to OpenWeatherMap API, into a visual rendering. Launch window, and pick your city. Boston, Chicago, Los Angeles, or New York City will render matching skylines, however, any city can be launched with a generic skyline. Once you luanch your city, Window takes the UNIX time for sunrise, sunset, and the moment the code executes, to position the sun on one of 130 possible locations along a progress arc. Once, the sun position has been determined, all other major weather conditions such as day/night, clouds, rain and snow are set.',
+      'Using Axios, Window transforms a GET request to OpenWeatherMap API, into a multi-layered visual rendering. Launch window, and pick your city. Boston, Chicago, Los Angeles, or New York City will render matching skylines, however, any city can be launched with a generic skyline. Once you luanch your city, Window takes the UNIX time for sunrise, sunset, and the moment the code executes, to position the sun on one of 130 possible locations along a progress arc. Once, the sun position has been determined, all other major weather conditions such as day/night, clouds, rain and snow are set.',
     description2:
       'City selections on Window will persist between sessions thanks to local storage. Want to watch the sunset through your virtual window? Just leave Window open, and it will update once every 60 seconds.',
   },
