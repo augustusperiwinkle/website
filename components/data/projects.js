@@ -74,6 +74,7 @@ const projects = [
       'gamenight2.jpg',
       'gamenight3.jpg',
       'gamenight4.jpg',
+      'gamenight5.jpg',
     ],
     projectLink: 'https://game--night.herokuapp.com',
     teaser:
