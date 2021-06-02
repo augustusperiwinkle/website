@@ -24,7 +24,7 @@ const WorkPageProject = (props) => {
           >
             <div className="workPagePhotoWrapper">
               <img
-                src={`./photos/${myProject.imageURLs[0]}`}
+                src={`./photos/${myProject.localSlug}/${myProject.imageURLs[0]}`}
                 className="workPageProjectPhoto"
               />
               <div className="workPagePhotoMask">

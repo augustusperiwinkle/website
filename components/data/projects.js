@@ -148,7 +148,7 @@ const projects = [
     title: `Dana Kenney`,
     localSlug: 'danakenney',
     team: ['solo', 'Sole developer'],
-    imageURLs: ['danasite0.jpg', 'danasite1.jpg', 'danasite2.jpg'],
+    imageURLs: ['danakenney0.jpg', 'danakenney1.jpg', 'danakenney2.jpg'],
     projectLink: 'https://danakenney.com',
     teaser: `A fully responsive recreation of the Squarespace 'Degraw' template.`,
     subTitle: `A fully responsive recreation of the Squarespace 'Degraw' template, using no external styling libraries.`,

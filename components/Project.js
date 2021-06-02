@@ -122,7 +122,10 @@ export default class Project extends React.Component {
             ></i>
             {myProject.imageURLs.map((url) => {
               return (
-                <img src={`./photos/${url}`} className="descriptionImage" />
+                <img
+                  src={`./photos/${myProject.localSlug}/${url}`}
+                  className="descriptionImage"
+                />
               );
             })}
             <i
