@@ -91,7 +91,7 @@ const projects = [
       'axios',
       'heroku',
     ],
-    videoURL: null,
+    videoURL: 'https://www.youtube.com/embed/xUTlEjmI1WI',
     description:
       'No need to make an account, just enter your name one time and Game Night will remember you thanks to local storage. Once you confirm that you will be attending the game night, you will be assigned a randomized dog avatar and placed in the waiting room. Watch as other players file into the waiting room and fill up the chairs one by one, until the host opens the room. Once in the game room, players have access to the zoom link, any room codes, and three votes to vote for their games of choice. Game night will award 1st, 2nd and 3rd place medals to the games with the highest respective vote counts.',
     description2:
