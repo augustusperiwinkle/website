@@ -8,7 +8,7 @@ export default class Credit extends React.Component {
   render() {
     return (
       <div id="creditContainer">
-        <p id="credit">Website coded by Derek Louis, 2021</p>
+        <p id="credit">Coded by Derek Louis, 2021</p>
       </div>
     );
   }

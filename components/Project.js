@@ -7,33 +7,48 @@ import Credit from './Credit';
 import './styles/Project.css';
 
 let slideIndex = 1;
+let intervalID = null;
+let techSlideIndex = 0;
 
 export default class Project extends React.Component {
   constructor() {
     super();
     this.state = {
       technology: 'Technologies',
+      slideShowTechnology: 'Technologies',
     };
+    this.techTitleSlideContainerRef = React.createRef();
+    this.techTitleRef = React.createRef();
     this.mouseOver = this.mouseOver.bind(this);
     this.mouseLeave = this.mouseLeave.bind(this);
     this.newSlide = this.newSlide.bind(this);
     this.handleSlide = this.handleSlide.bind(this);
+    this.handleAnimation = this.handleAnimation.bind(this);
   }
   componentDidMount() {
     window.scrollTo(0, 0);
     this.newSlide(slideIndex);
+  }
+  componentWillUnmount() {
+    clearInterval(intervalID);
+    intervalID = null;
+    techSlideIndex = 0;
   }
   mouseOver(e) {
     if (e.target.className === 'techIcon') {
       this.setState({
         technology: e.target.id,
       });
+      this.techTitleSlideContainerRef.current.className = 'opacity0';
     }
   }
   mouseLeave() {
-    this.setState({
-      technology: 'Technologies',
-    });
+    setTimeout(() => {
+      this.setState({
+        technology: 'Technologies',
+      });
+      this.techTitleSlideContainerRef.current.className = '';
+    }, 3000);
   }
 
   newSlide(n) {
@@ -54,11 +69,35 @@ export default class Project extends React.Component {
     this.newSlide((slideIndex += n));
   }
 
+  handleAnimation() {
+    this.techTitleRef.current.className = '';
+    void this.techTitleRef.current.offsetWidth;
+    this.techTitleRef.current.className = 'slideTechTitleAnimation';
+  }
+
   render() {
     const projectLocalSlug = this.props.match.params.project;
     const myProject = projects.filter(
       (project) => project.localSlug === projectLocalSlug
     )[0];
+    if (intervalID === null) {
+      this.setState({
+        slideShowTechnology: myProject.technologies[0],
+      });
+      intervalID = setInterval(() => {
+        if (techSlideIndex === myProject.technologies.length - 1) {
+          this.setState({
+            slideShowTechnology: myProject.technologies[0],
+          });
+          techSlideIndex = 0;
+        } else {
+          this.setState({
+            slideShowTechnology: myProject.technologies[techSlideIndex + 1],
+          });
+          techSlideIndex++;
+        }
+      }, 5000);
+    }
     return myProject === undefined ? (
       <>{this.props.history.push('/404error')}</>
     ) : (
@@ -102,6 +141,20 @@ export default class Project extends React.Component {
               })}
             </div>
             <div id="projectTechTitleContainer">
+              <div
+                id="projectTechTitleSlideContainer"
+                ref={this.techTitleSlideContainerRef}
+              >
+                <h1
+                  style={techObj[this.state.slideShowTechnology].style}
+                  id="slideShowProjectTechTitle"
+                  className="slideTechTitleAnimation"
+                  ref={this.techTitleRef}
+                  onAnimationEnd={this.handleAnimation}
+                >
+                  {techObj[this.state.slideShowTechnology].name}
+                </h1>
+              </div>
               <h1
                 style={techObj[this.state.technology].style}
                 id="projectTechTitle"
