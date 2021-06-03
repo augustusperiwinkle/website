@@ -101,12 +101,14 @@ export default class Project extends React.Component {
                 );
               })}
             </div>
-            <h1
-              style={techObj[this.state.technology].style}
-              id="projectTechTitle"
-            >
-              {techObj[this.state.technology].name}
-            </h1>
+            <div id="projectTechTitleContainer">
+              <h1
+                style={techObj[this.state.technology].style}
+                id="projectTechTitle"
+              >
+                {techObj[this.state.technology].name}
+              </h1>
+            </div>
           </div>
           <p id="projectDescription">{myProject.description}</p>
           {myProject.description2 && (
