@@ -60,7 +60,7 @@ const projects = [
     ],
     videoURL: null,
     description:
-      'Inspired by Boston Bruins forwrad David Pastrňák (affectionately known to Bruins fans as "Pasta"), Pasta Friends utilizes the NHL API to deliver player stats, player info, league standings, live boxscores, scoring play summaries, game day rosters and live "players currently on ice". While the application is Bruins themed and Bruins focused, it allows the user to select any of the 32 NHL teams.',
+      'Inspired by Boston Bruins forwrad David Pastrňák (affectionately known to Bruins fans as "Pasta"), Pasta Friends utilizes the NHL API to deliver player stats, player info, team stats, league standings, live boxscores, scoring play summaries, game day rosters and live "players currently on ice". While the application is Bruins themed and Bruins focused, it allows the user to select any of the 32 NHL teams.',
     description2:
       "Use the virtual remote control to change teams in a fun and unique way. Be sure to try all of the buttons on the virtual remote and you may just find an easter egg! Enjoy Pasta Friends on your desktop, or add it to your phone as a PWA for beautiful full screen mobile styling. The live boxscore and game rosters components allow you to enable auto updates, or use manual updates if you don't want to spoil the score after a certain time.",
   },
