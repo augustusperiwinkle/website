@@ -99,6 +99,10 @@ const techObj = {
     name: 'Socket.io',
     style: { color: '#000' },
   },
+  pwa: {
+    name: 'PWA',
+    style: { color: '#5A0FC8' },
+  },
 };
 
 export default techObj;
