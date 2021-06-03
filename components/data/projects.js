@@ -41,6 +41,7 @@ const projects = [
       'pastafriends1.jpg',
       'pastafriends2.jpg',
       'pastafriends3.jpg',
+      'pastafriends4.jpg',
     ],
     projectLink: 'https://pastafriends.herokuapp.com/',
     teaser:
