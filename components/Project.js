@@ -23,7 +23,6 @@ export default class Project extends React.Component {
     this.mouseLeave = this.mouseLeave.bind(this);
     this.newSlide = this.newSlide.bind(this);
     this.handleSlide = this.handleSlide.bind(this);
-    this.handleAnimation = this.handleAnimation.bind(this);
   }
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -69,12 +68,6 @@ export default class Project extends React.Component {
     this.newSlide((slideIndex += n));
   }
 
-  handleAnimation() {
-    this.techTitleRef.current.className = '';
-    void this.techTitleRef.current.offsetWidth;
-    this.techTitleRef.current.className = 'slideTechTitleAnimation';
-  }
-
   render() {
     const projectLocalSlug = this.props.match.params.project;
     const myProject = projects.filter(
@@ -96,6 +89,9 @@ export default class Project extends React.Component {
           });
           techSlideIndex++;
         }
+        this.techTitleRef.current.className = '';
+        void this.techTitleRef.current.offsetWidth;
+        this.techTitleRef.current.className = 'slideTechTitleAnimation';
       }, 5000);
     }
     return myProject === undefined ? (
@@ -150,7 +146,6 @@ export default class Project extends React.Component {
                   id="slideShowProjectTechTitle"
                   className="slideTechTitleAnimation"
                   ref={this.techTitleRef}
-                  onAnimationEnd={this.handleAnimation}
                 >
                   {techObj[this.state.slideShowTechnology].name}
                 </h1>
