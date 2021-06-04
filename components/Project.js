@@ -89,9 +89,6 @@ export default class Project extends React.Component {
           });
           techSlideIndex++;
         }
-        this.techTitleRef.current.className = '';
-        void this.techTitleRef.current.offsetWidth;
-        this.techTitleRef.current.className = 'slideTechTitleAnimation';
       }, 5000);
     }
     return myProject === undefined ? (
