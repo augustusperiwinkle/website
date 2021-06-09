@@ -190,7 +190,7 @@ const projects = [
     projectLink: 'https://elevator-game.herokuapp.com/',
     teaser: `A fun game to practice your mouse or finger accuracy.`,
     subTitle: `A fun game to practice your mouse or finger accuracy, utilizing local storage to remember your high scores.`,
-    technologies: ['react', 'css3', 'git', 'github', 'heroku'],
+    technologies: ['react', 'javascript', 'css3', 'git', 'github', 'heroku'],
     videoURL: null,
     description: `Elevator started off as a practice exercise in using CSS box-shadows to create realistic looking buttons / button pushes. After making a few rows of realistic looking elevator buttons, I decided to turn this little practice exercise into a functional game.`,
     description2: null,
