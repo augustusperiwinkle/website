@@ -11,6 +11,7 @@ const projects = [
       'viditia4.jpg',
       'viditia5.jpg',
       'viditia6.jpg',
+      'viditia7.jpg',
     ],
     projectLink: 'https://viditia-cf976.web.app/',
     teaser:
