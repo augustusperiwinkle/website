@@ -1,17 +1,29 @@
-.contactContainer {
+#contactContainer {
   font-size: 10px;
-  margin: 10em 0em 0em 0em;
   width: 100vw;
   max-width: 100%;
   min-width: 37.5em;
+  padding: 75px 0px 0px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.desktopContactContainer {
+  height: 100vh;
+}
+
+.mobileContactContainer {
+  height: -webkit-fill-available;
 }
 
 #contactSpacer {
   font-size: inherit;
-  margin: 3.6em 0em;
+  margin: 7em 0em;
 }
 
 #contactTitleContainer {
@@ -71,35 +83,31 @@
 }
 
 @media (max-width: 600px) {
-  #contactTitle {
-    margin: 0px 0px 75px 0px;
+  #contactSpacer {
+    margin: 6em 0em;
   }
 }
 
 @media (max-width: 500px), (max-height: 895px) {
-  .contactContainer {
+  #contactContainer {
     font-size: 8px;
-    margin: 15em 0em 0em 0em;
   }
 }
 
 @media (max-height: 805px), (max-width: 385px) {
-  .contactContainer {
+  #contactContainer {
     font-size: 6px;
-    margin: 20em 0em 0em 0em;
   }
 }
 
 @media (max-height: 700px) {
-  .contactContainer {
-    font-size: 5px;
-    margin: 20em 0em 0em 0em;
-  }
 }
 
 @media (max-height: 573px) {
-  .contactContainer {
-    font-size: 4px;
-    margin: 22.5em 0em 0em 0em;
+  #contactContainer {
+    font-size: 5.5px;
+  }
+  #contactSpacer {
+    margin: 2em 0em;
   }
 }

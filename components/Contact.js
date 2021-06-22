@@ -1,14 +1,59 @@
 import React from 'react';
 import './styles/Contact.css';
-import './styles/stars.css';
+import './styles/hobby.css';
 
-const starArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
+const hobbyArr = [
+  'astronomy',
+  'bicycle',
+  'bonsai',
+  'book',
+  'hockey',
+  'music',
+  'science',
+  'telescope',
+  'travel',
+  'astronomy',
+  'bicycle',
+  'bonsai',
+  'book',
+  'hockey',
+  'music',
+  'science',
+  'telescope',
+  'travel',
+];
+
+let mobileAgent = false;
+
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  mobileAgent = true;
+}
+
+let isMobile = window.innerWidth <= 450 || window.innerHeight <= 450;
+
+window.addEventListener('resize', function (e) {
+  if (
+    (window.innerWidth <= 450 || window.innerHeight <= 450) &&
+    isMobile === false
+  ) {
+    isMobile = true;
+  } else if (
+    (window.innerWidth > 450 || window.innerHeight > 450) &&
+    isMobile === true
+  ) {
+    isMobile = false;
+  }
+});
 
 export default class Contact extends React.Component {
   constructor() {
     super();
     this.state = {
-      currentHover: 'star',
+      currentHover: 'hobby',
     };
   }
   componentDidMount() {
@@ -16,14 +61,29 @@ export default class Contact extends React.Component {
   }
   render() {
     return (
-      <div className="contactContainer">
+      <div
+        id="contactContainer"
+        className={`${
+          mobileAgent ? 'mobileContactContainer' : 'desktopContactContainer'
+        }`}
+        onMouseOver={(e) => {
+          if (
+            e.target.id === 'contactContainer' &&
+            this.state.currentHover !== 'hobby'
+          ) {
+            this.setState({
+              currentHover: 'hobby',
+            });
+          }
+        }}
+      >
         <div id="contactSpacer" />
         <div
           id="contactTitleContainer"
           onMouseOver={() => {
-            if (this.state.currentHover !== 'star') {
+            if (!isMobile && this.state.currentHover !== 'hobby') {
               this.setState({
-                currentHover: 'star',
+                currentHover: 'hobby',
               });
             }
           }}
@@ -36,9 +96,9 @@ export default class Contact extends React.Component {
           href="https://github.com/dereklouis"
           className="gitHubIcon contactLink"
           onMouseOver={() => {
-            if (this.state.currentHover !== 'githubStar') {
+            if (!isMobile && this.state.currentHover !== 'githubHobby') {
               this.setState({
-                currentHover: 'githubStar',
+                currentHover: 'githubHobby',
               });
             }
           }}
@@ -50,9 +110,9 @@ export default class Contact extends React.Component {
           href="https://www.linkedin.com/in/derek-louis/"
           className="linkedInIcon contactLink"
           onMouseOver={() => {
-            if (this.state.currentHover !== 'linkedinStar') {
+            if (!isMobile && this.state.currentHover !== 'linkedinHobby') {
               this.setState({
-                currentHover: 'linkedinStar',
+                currentHover: 'linkedinHobby',
               });
             }
           }}
@@ -64,9 +124,9 @@ export default class Contact extends React.Component {
           href="mailto:thedereklouis@gmail.com"
           className="emailIcon contactLink"
           onMouseOver={() => {
-            if (this.state.currentHover !== 'emailStar') {
+            if (!isMobile && this.state.currentHover !== 'emailHobby') {
               this.setState({
-                currentHover: 'emailStar',
+                currentHover: 'emailHobby',
               });
             }
           }}
@@ -78,13 +138,13 @@ export default class Contact extends React.Component {
         <div id="contactCreditContainer">
           <p id="contactCredit">Website coded by Derek Louis, 2021</p>
         </div>
-        <div id="starContainer">
-          {starArr.map((star) => {
+        <div id="hobbyContainer">
+          {hobbyArr.map((hobby, idx) => {
             return (
               <img
                 alt=""
-                src="photos/star.png"
-                className={`star ${this.state.currentHover + star}`}
+                src={`photos/hobbyIcons/${hobby}.png`}
+                className={`hobby ${this.state.currentHover + (idx + 1)}`}
               />
             );
           })}
