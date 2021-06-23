@@ -23,16 +23,6 @@ const hobbyArr = [
   'travel',
 ];
 
-let mobileAgent = false;
-
-if (
-  /|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-    navigator.userAgent
-  )
-) {
-  mobileAgent = true;
-}
-
 let isMobile = window.innerWidth <= 450 || window.innerHeight <= 450;
 
 window.addEventListener('resize', function (e) {
@@ -63,9 +53,6 @@ export default class Contact extends React.Component {
     return (
       <div
         id="contactContainer"
-        className={`${
-          mobileAgent ? 'mobileContactContainer' : 'desktopContactContainer'
-        }`}
         onMouseOver={(e) => {
           if (
             e.target.id === 'contactContainer' &&
