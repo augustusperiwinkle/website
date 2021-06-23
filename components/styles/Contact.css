@@ -1,6 +1,7 @@
 #contactContainer {
   font-size: 10px;
   width: 100vw;
+  height: 100vh;
   max-width: 100%;
   min-width: 37.5em;
   padding: 75px 0px 0px 0px;
@@ -11,14 +12,6 @@
   position: fixed;
   top: 0;
   left: 0;
-}
-
-.desktopContactContainer {
-  height: 100vh;
-}
-
-.mobileContactContainer {
-  height: -webkit-fill-available;
 }
 
 #contactSpacer {
