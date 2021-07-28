@@ -81,6 +81,26 @@ const projects = [
       "Use the virtual remote control to change teams in a fun and unique way. Be sure to try all of the buttons on the virtual remote and you may just find an easter egg! Enjoy Pasta Friends on your desktop, or add it to your phone as a PWA for beautiful full screen mobile styling. The live boxscore and game rosters components allow you to enable auto updates, or use manual updates if you don't want to spoil the score after a certain time.",
   },
   {
+    title: 'Bass Station II',
+    localSlug: 'bassstation',
+    team: ['solo', 'Sole developer'],
+    imageURLs: [
+      'bassstation0.jpg',
+      'bassstation1.jpg',
+      'bassstation2.jpg',
+      'bassstation3.jpg',
+      'bassstation4.jpg',
+    ],
+    projectLink: 'https://bass-station-ii.web.app/',
+    teaser: 'A recreation of the Novation Bass Station II using pure CSS.',
+    subTitle:
+      'This is a to scale recreation of the Novation Bass Station II using pure CSS.',
+    technologies: ['react', 'firebase', 'javascript', 'css3', 'git', 'github'],
+    videoURL: null,
+    description: `The first step in creating this photorealistic and to-scale version of the Bass Station II in react / pure CSS was to measure every tiny feature on the synth in millimeters. Careful attention to detail was taken in recreating subtleties such as: the light/shadows on the knobs, faders, buttons and switches, 3D shadow effects when keys or buttons are pushed, individual rubber grip lines on the knobs, unlit number ghosts on the patch screen and many more.`,
+    description2: `Most of the physical UI features have also been recreated. Users can press keys, press buttons, switch switches, twist knobs, slide faders, push mod/pitch wheels, change patches, alter patches, save patches and more. In addition to the challenge of creating photorealistic details in CSS, this project provided several other fun challenges like: Optimizing the data flow to load patches, switch patches, alter patches, and save patches efficiently, and getting the moving parts of the synth to feel natural and fluid.`,
+  },
+  {
     title: 'Space Quiz',
     localSlug: 'spacequiz',
     team: ['solo', 'Sole developer'],
