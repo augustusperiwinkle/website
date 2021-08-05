@@ -75,7 +75,7 @@ const projects = [
       'pastafriends18.jpg',
       'pastafriends19.jpg',
     ],
-    projectLink: 'https://pastafriends.herokuapp.com/',
+    projectLink: 'https://pastafriends-4322d.web.app/',
     teaser:
       'A PWA/web application that utilizes the NHL API to deliver stats, live boxscores and more to hockey fans.',
     subTitle:
@@ -85,10 +85,10 @@ const projects = [
       'reactrouter',
       'pwa',
       'axios',
-      'heroku',
       'javascript',
       'css3',
       'git',
+      'firebase',
     ],
     videoURL: 'https://www.youtube.com/embed/WjHiIO-iXtw',
     description:
