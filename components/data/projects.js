@@ -138,12 +138,12 @@ const projects = [
       'spacequiz14.jpg',
       'spacequiz15.jpg',
     ],
-    projectLink: 'https://space--quiz.herokuapp.com/',
+    projectLink: 'https://space-quiz-27659.web.app',
     teaser:
       'A challenging 50-question space quiz with a scale model solar system and a slick UI.',
     subTitle:
       'Space Quiz is a challenging 50-question space quiz featuring a scale model solar system and a slick UI.',
-    technologies: ['react', 'heroku', 'javascript', 'css3', 'git', 'github'],
+    technologies: ['react', 'javascript', 'css3', 'git', 'github', 'firebase'],
     videoURL: 'https://www.youtube.com/embed/KlK5NUQxLjM',
     description: `The goal of Space Quiz was to deliver an experience far more captivating than your typical Sprocle quiz. Before you even begin the quiz, you are greeted by a beautiful scale model solar system. Click on a planet to learn more about about it, or click on the orbital rings button in the top right corner to toggle orbital rings on and off. Planets feature CSS generated shadows that stay true to the center of the sun regardless of the planet's orbital or rotational position.`,
     description2: `The color palette and component grow/shrink animations were inspired by the Star Wars opening credits in order to give the user a feeling of subliminal nostalgia. Extra touches were added such as the meteor that will occasionally bass behind the title, as well as the comet that smashes through the title on 'begin' or 'resume'. Half way through the quiz and need to run? Local storage will automatically save your place and allow you to resume right where you left off.`,
