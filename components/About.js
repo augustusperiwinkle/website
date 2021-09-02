@@ -45,8 +45,8 @@ export default class About extends React.Component {
                 <br />
                 When Derek isn't coding, he's most likely learning about or
                 enjoying astronomy, bonsai, books, cycling, dark chocolate,
-                hockey, music, nature, podcasts, science, telescopes, traveling,
-                video games and watches.
+                dogs, hockey, music, nature, podcasts, science, telescopes,
+                traveling, video games and watches.
               </div>
             </div>
             <h1
