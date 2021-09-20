@@ -261,7 +261,7 @@ const projects = [
     description:
       'No need to make an account, just enter your name one time and Game Night will remember you thanks to local storage. Once you confirm that you will be attending the game night, you will be assigned a randomized dog avatar and placed in the waiting room. Watch as other players file into the waiting room and fill up the chairs one by one, until the host opens the room. Once in the game room, players have access to the zoom link, any room codes, and three votes to vote for their games of choice. Game night will award 1st, 2nd and 3rd place medals to the games with the highest respective vote counts.',
     description2:
-      'What if you (the usual host) is away and somebody else needs to take over hosting duties? Game Night makes access to the Admin Panel easy by utilizing a secret key combination to render it, rather than giving certain accounts admin privieges. Game Night utilizes socket.io to ensure that every update to the database is emitted to every connected player in real time.',
+      'What if you (the usual host) is away and somebody else needs to take over hosting duties? Game Night makes access to the Admin Panel easy by utilizing a secret key combination to render it, rather than giving certain accounts admin privileges. Game Night utilizes socket.io to ensure that every update to the database is emitted to every connected player in real time.',
   },
   {
     title: 'Window',
