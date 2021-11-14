@@ -334,3 +334,15 @@
     transform: translate(0em, 2em);
   }
 }
+
+@media (max-height: 775px) {
+  #hobbyContainer {
+    font-size: 5px;
+  }
+}
+
+@media (max-height: 665px) {
+  #hobbyContainer {
+    font-size: 4px;
+  }
+}
