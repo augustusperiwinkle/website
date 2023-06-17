@@ -4,12 +4,12 @@ import { HashRouter } from 'react-router-dom';
 
 document.cookie = 'cookie1=value1; SameSite=Lax';
 
-import NavBar from './NavBar';
 import Routes from './Routes';
+import ColorLand from './ColorLand';
 
 ReactDOM.render(
   <HashRouter>
-    <NavBar />
+    <ColorLand />
     <Routes />
   </HashRouter>,
   document.getElementById('app')

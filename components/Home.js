@@ -1,9 +1,9 @@
 import React from 'react';
 import Footer from './Footer';
 import Credit from './Credit';
-import './styles/About.css';
+import './styles/home.css';
 
-function About(props) {
+function Home(props) {
   return (
     <>
       <Footer />
@@ -12,4 +12,4 @@ function About(props) {
   );
 }
 
-export default About;
+export default Home;

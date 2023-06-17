@@ -7,10 +7,11 @@
   align-items: center;
   z-index: 5;
   min-width: 375px;
+  border-bottom: 2px solid white;
 }
 
 .navBarMain {
-  background-color: #89cffb;
+  background-color: #c1a7ea;
   animation-name: toMain;
   animation-duration: 0.75s;
 }
@@ -89,7 +90,8 @@
 }
 
 .navItem:hover {
-  color: black;
+  /* color: #caddc0 */
+  color: #fdf289;
 }
 
 @keyframes slideIn {

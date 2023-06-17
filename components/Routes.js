@@ -1,25 +1,30 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
+import { withRouter } from 'react-router';
 
-import Animation from './Animation';
-import WorkPage from './WorkPage';
+import TitleScreen from './TitleScreen';
+import NavBar from './NavBar';
+import Home from './Home';
+import Music from './Music';
 import Contact from './Contact';
 import About from './About';
 import Project from './Project';
 import ErrorPage from './ErrorPage';
 
-export default class Routes extends React.Component {
-  constructor() {
+class Routes extends React.Component {
+  constructor(props) {
     super();
   }
+
   render() {
-    const animationStatus = localStorage.getItem('animationPlayed');
+    const path = this.props.location.pathname;
     return (
       <>
-        {animationStatus !== 'true' && <Animation />}
+        {path !== '/' && <NavBar />}
         <Switch>
-          <Redirect exact from="/" to="/work" />
-          <Route path="/work" component={WorkPage} />
+          <Route path="/" exact component={TitleScreen} />
+          <Route path="/home" component={Home} />
+          <Route path="/music" component={Music} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/projects/:project" component={Project} />
@@ -30,3 +35,5 @@ export default class Routes extends React.Component {
     );
   }
 }
+
+export default withRouter(Routes);
