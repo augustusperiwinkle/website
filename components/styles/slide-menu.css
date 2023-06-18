@@ -1,5 +1,5 @@
 #slideMenuWrapper {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -22,22 +22,23 @@
 
 .SMLink {
   text-decoration: none;
-  color: #0670b2;
+  color: white;
   font-family: 'Open Sans', sans-serif;
-  font-size: 22px;
+  font-size: 26px;
+  font-weight: bold;
   margin: 25px 0px 0px 25px;
   transition-duration: 0.25s;
 }
 
 .SMLink:hover {
-  color: #0670b2;
+  color: #ea86b6;
 }
 
 .SMItem {
   margin: 32px 0px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   #slideMenuWrapper {
     visibility: visible;
     display: inline-flex;

@@ -1,30 +1,30 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import SlideMenu from './SlideMenu';
 import './styles/NavBar.css';
 
+let menuOpen = false;
+
 function NavBar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const menuBtn = useRef(null);
+  const slideMenu = useRef(null);
 
   function handleClick() {
-    const menuButton = document.querySelector('.menu-btn');
-    const slideMenu = document.getElementById('slideMenuWrapper');
     if (!menuOpen) {
-      menuButton.classList.add('open');
-      slideMenu.className = 'slideIn';
-      setMenuOpen(true);
+      menuBtn.current.classList.add('open');
+      slideMenu.current.className = 'slideIn';
+      menuOpen = true;
     } else {
-      menuButton.classList.remove('open');
-      slideMenu.className = 'slideOut';
-      setMenuOpen(false);
+      menuBtn.current.classList.remove('open');
+      slideMenu.current.className = 'slideOut';
+      menuOpen = false;
     }
   }
+
   function closeMenu() {
-    const menuButton = document.querySelector('.menu-btn');
-    const slideMenu = document.getElementById('slideMenuWrapper');
-    menuButton.classList.remove('open');
-    slideMenu.className = 'slideOut';
-    setMenuOpen(false);
+    menuBtn.current.classList.remove('open');
+    slideMenu.current.className = 'slideOut';
+    menuOpen = false;
   }
 
   useEffect(() => {
@@ -40,21 +40,19 @@ function NavBar() {
   }, []);
 
   function handleResize() {
-    const slideMenu = document.getElementById('slideMenuWrapper');
-
-    if (window.innerWidth > 600) {
-      slideMenu.className = 'menuHidden';
-    } else if (window.innerWidth <= 600 && menuOpen) {
-      slideMenu.className = 'slideIn';
+    if (window.innerWidth > 750) {
+      slideMenu.current.className = 'menuHidden';
+    } else if (window.innerWidth <= 750 && menuOpen) {
+      slideMenu.current.className = 'slideIn';
     }
   }
 
   return (
     <>
-      <SlideMenu closeMenu={closeMenu} />
+      <SlideMenu closeMenu={closeMenu} slideMenuRef={slideMenu} />
       <div id="navBarWrap" className="navBarMain">
         <div id="navBar">
-          <div className="menu-btn" onClick={handleClick}>
+          <div className="menu-btn" onClick={handleClick} ref={menuBtn}>
             <div id="burger" className="menu-btn__burger"></div>
           </div>
           <Link

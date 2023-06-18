@@ -90,7 +90,6 @@
 }
 
 .navItem:hover {
-  /* color: #caddc0 */
   color: #fdf289;
 }
 
@@ -128,7 +127,7 @@
   animation-duration: 0.5s;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   #name {
     margin-right: 9vw;
   }
@@ -155,14 +154,30 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 540px) {
   #name {
-    margin-right: 12vw;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 475px) {
+  #name {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 355px) {
+  #name {
+    max-width: 150px;
+    text-align: center;
+  }
+  .menu-btn {
+    margin-right: 14vw;
   }
 }
 
 @media (max-width: 320px) {
-  #name {
-    margin-right: 20vw;
+  .menu-btn {
+    margin-right: 10vw;
   }
 }
