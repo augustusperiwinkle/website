@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/Credit.css';
+import './styles/credit.css';
 
 export default class Credit extends React.Component {
   constructor() {
@@ -8,7 +8,7 @@ export default class Credit extends React.Component {
   render() {
     return (
       <div id="creditContainer">
-        <p id="credit">Coded by Derek Louis, 2021</p>
+        <p id="credit">Coded by Derek Louis, 2023</p>
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/Footer.css';
+import './styles/footer.css';
 
 export default class Footer extends React.Component {
   constructor() {
@@ -11,17 +11,26 @@ export default class Footer extends React.Component {
   render() {
     return (
       <div id="footerContainer">
-        <a href="https://github.com/dereklouis" className="iconAnchor">
-          <i className="fab fa-github footerIcon gitHubIcon"></i>
-        </a>
         <a
-          href="https://www.linkedin.com/in/derek-louis/"
+          href="https://github.com/dereklouis"
+          target="_blank"
           className="iconAnchor"
         >
-          <i className="fab fa-linkedin footerIcon linkedInIcon"></i>
+          <i className="fab fa-github footerIcon"></i>
         </a>
-        <a href="mailto:periwinkleaugustus@gmail.com" className="iconAnchor">
-          <i class="far fa-envelope footerIcon emailIcon"></i>
+        <a
+          href="https://open.spotify.com/artist/07qpp9gPZKocgiJEuwK299?si=C--es7iDRyuVvhctKGQYeQ"
+          target="_blank"
+          className="iconAnchor"
+        >
+          <i className="fab fa-spotify footerIcon"></i>
+        </a>
+        <a
+          href="mailto:periwinkleaugustus@gmail.com"
+          target="_blank"
+          className="iconAnchor"
+        >
+          <i class="far fa-envelope footerIcon"></i>
         </a>
       </div>
     );

@@ -1,0 +1,87 @@
+#master-credit {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 24px;
+  margin-top: 36px;
+}
+
+#music-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  margin: 3.6em 0;
+  gap: 2.5em;
+}
+
+.song-wrapper {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2.5em;
+  width: 80%;
+  border-radius: 0.8em;
+  display: flex;
+}
+
+.song-wrapper .left-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-wrapper .right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2.5em;
+}
+
+.song-wrapper .left-column .song-name {
+  font-size: 3em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.song-wrapper .left-column img {
+  width: 50em;
+  height: 50em;
+}
+
+.song-wrapper .right-column .credits-wrapper {
+  margin-top: 3.3em;
+  font-size: 2em;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.song-wrapper .right-column .credits-wrapper .credit span {
+  font-weight: bold;
+}
+
+.song-wrapper .right-column .links-wrapper {
+  display: flex;
+  gap: 2em;
+}
+
+.song-wrapper .right-column .links-wrapper .song-link-anchor {
+  width: 7.5em;
+  height: 7.5em;
+  background-color: white;
+  color: #fd8d67;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+
+.song-wrapper .right-column .links-wrapper .song-link-anchor:hover {
+  color: #f96d3c;
+}
+
+.song-wrapper .right-column .links-wrapper .song-link-icon {
+  font-size: 5em;
+  color: inherit;
+}

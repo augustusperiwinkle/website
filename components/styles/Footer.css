@@ -7,14 +7,30 @@
   margin: auto 0px 20px 0px;
 }
 
+.iconAnchor {
+  display: block;
+  margin: 0px 50px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.3s;
+  color: white;
+}
+
 .footerIcon {
   font-size: 36px;
   padding: 0px;
+  color: inherit;
+  position: absolute;
 }
 
-.iconAnchor {
-  display: block;
-  margin: 0px 50px 0px 50px;
+.iconAnchor:hover {
+  background-color: white;
+  color: #93bc94;
 }
 
 @media (max-width: 600px) {

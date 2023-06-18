@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import SlideMenu from './SlideMenu';
-import './styles/NavBar.css';
+import './styles/nav-bar.css';
 
 let menuOpen = false;
 
@@ -64,13 +64,13 @@ function NavBar() {
           >
             <div id="name">Augustus Periwinkle</div>
           </Link>
-          <Link className="navItem" to="/music">
+          <Link className="nav-item" to="/music">
             <p>Music</p>
           </Link>
-          <Link className="navItem" to="/about">
+          <Link className="nav-item" to="/about">
             <p>About</p>
           </Link>
-          <Link className="navItem" to="/contact">
+          <Link className="nav-item" to="/contact">
             <p>Contact</p>
           </Link>
         </div>
