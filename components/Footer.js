@@ -20,7 +20,7 @@ export default class Footer extends React.Component {
         >
           <i className="fab fa-linkedin footerIcon linkedInIcon"></i>
         </a>
-        <a href="mailto:thedereklouis@gmail.com" className="iconAnchor">
+        <a href="mailto:periwinkleaugustus@gmail.com" className="iconAnchor">
           <i class="far fa-envelope footerIcon emailIcon"></i>
         </a>
       </div>

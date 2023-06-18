@@ -1,7 +1,7 @@
 {
-  "name": "dereklouis.github.io",
+  "name": "www.augustusperiwinkle.com",
   "version": "1.0.0",
-  "description": "Portfolio website for software engineer Derek Louis",
+  "description": "Website for Augustus Periwinkle",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dereklouis/dereklouis.github.io.git"
+    "url": "git+https://github.com/augustusperiwinkle/website.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dereklouis/dereklouis.github.io/issues"
+    "url": "https://augustusperiwinkle.com/#/404error"
   },
-  "homepage": "https://github.com/dereklouis/dereklouis.github.io#readme",
+  "homepage": "https://augustusperiwinkle.com",
   "devDependencies": {
     "@babel/preset-react": "^7.12.13",
     "css-loader": "^5.2.4",
