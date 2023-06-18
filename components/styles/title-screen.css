@@ -1,0 +1,117 @@
+#title-wrapper {
+  font-size: 10px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 11;
+  transition-duration: 1s;
+}
+
+h1 {
+  font-size: 12em;
+  margin: 0 0 21px 0;
+  font-family: 'Londrina Outline', cursive;
+  letter-spacing: 0.1em;
+  cursor: default;
+  font-weight: bold;
+  color: white;
+}
+
+h6 {
+  font-size: 2.4em;
+  font-weight: 100;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.1em;
+  cursor: default;
+  color: white;
+  transition-duration: 2s;
+}
+
+#title-sub-wrapper {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 0.4em;
+  margin: 0 0.53em;
+}
+
+#title-wrapper h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.t-l {
+  display: inline-block;
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+}
+
+@keyframes letterFloat {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 800px) {
+  #title-wrapper {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 710px) {
+  #title-wrapper {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 630px) {
+  #title-wrapper {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 555px) {
+  #title-wrapper {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 470px) {
+  #title-wrapper {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 395px) {
+  #title-wrapper {
+    font-size: 4px;
+  }
+}
+
+@media (max-width: 315px) {
+  #title-wrapper {
+    font-size: 3px;
+  }
+}
+
+@media (max-width: 240px) {
+  #title-wrapper {
+    font-size: 2px;
+  }
+}
+
+@media (max-width: 160px) {
+  #title-wrapper {
+    font-size: 1px;
+  }
+}
