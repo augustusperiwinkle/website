@@ -35,17 +35,6 @@ function ColorLand(props) {
     }
   }, [canvas, ctx]);
 
-  // user wants to reset canvas
-
-  // useEffect(() => {
-  //   console.log(777777, history);
-  //   if (location.pathname === '/' && canvas && ctx) {
-  //     ctx.clearRect(0, 0, canvas.width, canvas.height);
-  //     const test = localStorage.getItem('intervalId');
-  //     bootUpCanvas();
-  //   }
-  // }, [location]);
-
   function bootUpCanvas() {
     const _ctx = canvas.getContext('2d');
     setCtx(_ctx);

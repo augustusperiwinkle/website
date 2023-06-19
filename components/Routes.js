@@ -4,7 +4,6 @@ import { withRouter } from 'react-router';
 
 import TitleScreen from './TitleScreen';
 import NavBar from './NavBar';
-import Home from './Home';
 import Music from './Music';
 import Contact from './Contact';
 import About from './About';
@@ -23,7 +22,6 @@ class Routes extends React.Component {
         {path !== '/' && <NavBar />}
         <Switch>
           <Route path="/" exact component={TitleScreen} />
-          <Route path="/home" component={Home} />
           <Route path="/music" component={Music} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />

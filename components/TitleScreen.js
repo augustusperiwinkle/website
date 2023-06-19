@@ -61,7 +61,7 @@ function TitleScreen(props) {
     const intervalId = sessionStorage.getItem('intervalId');
     clearInterval(intervalId);
     sessionStorage.setItem('intervalId', '');
-    history.push('/home');
+    history.push('/music');
   }
 
   return (
