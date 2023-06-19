@@ -8,6 +8,7 @@ body {
 
 .page-wrapper {
   width: 100%;
+  min-height: calc(100vh - 77px);
   display: flex;
   flex-direction: column;
   align-items: center;

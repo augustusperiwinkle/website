@@ -90,7 +90,7 @@
   font-size: 18px;
 }
 
-.nav-item:hover {
+.nav-item:active {
   color: #fdf289;
 }
 
@@ -126,6 +126,12 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-duration: 0.5s;
+}
+
+@media (hover: hover) {
+  .nav-item:hover {
+    color: #fdf289;
+  }
 }
 
 @media (max-width: 750px) {

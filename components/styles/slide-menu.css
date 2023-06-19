@@ -30,12 +30,18 @@
   transition-duration: 0.25s;
 }
 
-.SMLink:hover {
+.SMLink:active {
   color: #ea86b6;
 }
 
 .SMItem {
   margin: 32px 0px;
+}
+
+@media (hover: hover) {
+  .SMLink:hover {
+    color: #ea86b6;
+  }
 }
 
 @media (max-width: 750px) {

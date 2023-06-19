@@ -28,9 +28,16 @@
   position: absolute;
 }
 
-.iconAnchor:hover {
+.iconAnchor:active {
   background-color: white;
   color: #93bc94;
+}
+
+@media (max-width: 750px) {
+  .iconAnchor:hover {
+    background-color: white;
+    color: #93bc94;
+  }
 }
 
 @media (max-width: 600px) {
