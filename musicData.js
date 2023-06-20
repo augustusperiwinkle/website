@@ -39,7 +39,8 @@ const musicData = [
     appleMusicLink:
       'https://music.apple.com/us/album/whittle-my-life/1689522730?i=1689522731',
     youTubeLink: '',
-    soundCloudLink: '',
+    soundCloudLink:
+      'https://soundcloud.com/augustus-periwinkle/whittle-my-life?si=06c519ed65904ddd9a4f7fd4d72e73c3&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
     amazonMusicLink:
       'https://music.amazon.com/albums/B0C68XK5K6?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_c5zI3JaLHWRpcbPDiJzLFtVJO&trackAsin=B0C693V3W5',
     credits: [
