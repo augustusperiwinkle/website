@@ -12,9 +12,6 @@ function SlideMenu(props) {
         <Link className="SMLink" to="/about" onClick={props.closeMenu}>
           <p className="SMItem">About</p>
         </Link>
-        <Link className="SMLink" to="/contact" onClick={props.closeMenu}>
-          <p className="SMItem">Contact</p>
-        </Link>
       </div>
     </div>
   );

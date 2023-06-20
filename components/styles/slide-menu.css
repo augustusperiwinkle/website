@@ -8,6 +8,7 @@
   display: none;
   visibility: hidden;
   backdrop-filter: blur(5px);
+  font-size: 10px;
 }
 
 .menuHidden {
@@ -24,9 +25,9 @@
   text-decoration: none;
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-size: 26px;
+  font-size: 2.6em;
   font-weight: bold;
-  margin: 25px 0px 0px 25px;
+  margin: 1em 0em 0em 1em;
   transition-duration: 0.25s;
 }
 
@@ -35,7 +36,8 @@
 }
 
 .SMItem {
-  margin: 32px 0px;
+  margin: 1.5em 0em;
+  letter-spacing: 0.05em;
 }
 
 @media (hover: hover) {
@@ -48,5 +50,26 @@
   #slideMenuWrapper {
     visibility: visible;
     display: inline-flex;
+  }
+}
+
+@media (max-height: 480px) {
+  .SMItem {
+    margin: 1em 0em;
+  }
+}
+
+@media (max-height: 425px) {
+  .SMItem {
+    margin: 0.5em 0em;
+  }
+}
+
+@media (max-height: 355px) {
+  #SMLinkBox {
+    margin: 100px 0px 0px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
   }
 }

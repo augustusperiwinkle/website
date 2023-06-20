@@ -70,9 +70,6 @@ function NavBar() {
           <Link className="nav-item" to="/about">
             <p>About</p>
           </Link>
-          <Link className="nav-item" to="/contact">
-            <p>Contact</p>
-          </Link>
         </div>
       </div>
     </>

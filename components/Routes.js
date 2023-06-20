@@ -5,9 +5,7 @@ import { withRouter } from 'react-router';
 import TitleScreen from './TitleScreen';
 import NavBar from './NavBar';
 import Music from './Music';
-import Contact from './Contact';
 import About from './About';
-import Project from './Project';
 import ErrorPage from './ErrorPage';
 
 class Routes extends React.Component {
@@ -24,8 +22,6 @@ class Routes extends React.Component {
           <Route path="/" exact component={TitleScreen} />
           <Route path="/music" component={Music} />
           <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/projects/:project" component={Project} />
           <Route path="/404error" component={ErrorPage} />
           <Redirect to="/404error" />
         </Switch>
