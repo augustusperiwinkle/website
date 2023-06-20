@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
 import Credit from './Credit';
-import './styles/music.css';
+import '../styles/music.css';
 import musicData from '../musicData';
 
 function Music(props) {

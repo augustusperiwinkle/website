@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
-import './styles/title-screen.css';
+import '../styles/title-screen.css';
 
 function TitleScreen(props) {
   const history = useHistory();

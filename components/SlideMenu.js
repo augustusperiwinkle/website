@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './styles/slide-menu.css';
+import '../styles/slide-menu.css';
 
 function SlideMenu(props) {
   return (

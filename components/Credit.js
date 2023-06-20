@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/credit.css';
+import '../styles/credit.css';
 
 function Credit() {
   return (

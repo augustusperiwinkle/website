@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import { colorsArray } from '../colors.js';
-import './styles/color-land.css';
+import '../styles/color-land.css';
 
 let lastIndex = null;
 

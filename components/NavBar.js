@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import SlideMenu from './SlideMenu';
-import './styles/nav-bar.css';
+import '../styles/nav-bar.css';
 
 let menuOpen = false;
 
