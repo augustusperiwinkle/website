@@ -1,0 +1,64 @@
+#error-wrapper {
+  font-size: 10px;
+  margin-top: 12em;
+}
+
+#error-wrapper h1 {
+  font-size: 12em;
+  font-family: 'Londrina Outline', cursive;
+  letter-spacing: 0.1em;
+  cursor: default;
+  font-weight: bold;
+  color: white;
+  margin: 0em 0.5em;
+}
+
+@media (max-height: 800px) {
+  #error-wrapper {
+    margin-top: 9em;
+  }
+}
+
+@media (max-height: 720px) {
+  #error-wrapper {
+    margin-top: 6em;
+  }
+}
+
+@media (max-width: 665px), (max-height: 585px) {
+  #error-wrapper {
+    font-size: 9px;
+    margin-top: 6em;
+  }
+}
+
+@media (max-height: 640px) {
+  #error-wrapper {
+    margin-top: 3em;
+  }
+}
+
+@media (max-width: 570px), (max-height: 530px) {
+  #error-wrapper {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 500px), (max-height: 475px) {
+  #error-wrapper {
+    font-size: 7px;
+    margin-top: 3em;
+  }
+}
+
+@media (max-width: 440px), (max-height: 430px) {
+  #error-wrapper {
+    font-size: 6px;
+  }
+}
+
+@media (max-height: 380px) {
+  #error-wrapper {
+    font-size: 5px;
+  }
+}

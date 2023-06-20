@@ -11,7 +11,7 @@
   transition-duration: 1s;
 }
 
-h1 {
+#title-wrapper h1 {
   font-size: 12em;
   margin: 0 0 21px 0;
   font-family: 'Londrina Outline', cursive;
@@ -19,9 +19,12 @@ h1 {
   cursor: default;
   font-weight: bold;
   color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-h6 {
+#title-wrapper h6 {
   font-size: 2.4em;
   font-weight: 100;
   margin: 0;
@@ -39,12 +42,6 @@ h6 {
   justify-content: center;
   gap: 0 0.4em;
   margin: 0 0.53em;
-}
-
-#title-wrapper h1 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .t-l {
