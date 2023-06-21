@@ -2,6 +2,7 @@ const musicDataTemplate = {
   songName: '',
   albumArtPathname: '',
   releaseDate: '',
+  studio: '',
   spotifyLink: '',
   appleMusicLink: '',
   youTubeLink: '',
@@ -15,6 +16,7 @@ const musicData = [
     songName: 'Hey! My Youth Is Back',
     albumArtPathname: 'https://i.imgur.com/YWUVHlH.jpg',
     releaseDate: '',
+    studio: 'Virtue And Vice, Brooklyn NY',
     spotifyLink: '',
     appleMusicLink: '',
     youTubeLink: '',
@@ -26,7 +28,7 @@ const musicData = [
       ['John Cushing', 'Trombone'],
       ['Tree Palmedo', 'Trumpet'],
       ['Robin Buyer', 'Mixing Engineer'],
-      ['Ryan Schwabe', 'Mastering Engineer'],
+      ['TBD', 'Mastering Engineer'],
       ['Erica Erica', 'Artwork'],
     ],
   },
@@ -34,6 +36,7 @@ const musicData = [
     songName: 'Whittle My Life',
     albumArtPathname: 'https://i.imgur.com/ode4AVy.jpg',
     releaseDate: '6/7/23',
+    studio: 'my apartment, Queens NY',
     spotifyLink:
       'https://open.spotify.com/track/1a85qkKcp8whrdYNM1uLCS?si=e70bcde10ea64264',
     appleMusicLink:

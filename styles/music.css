@@ -50,6 +50,10 @@
 }
 
 .song-wrapper .right-column .credits-wrapper .master-credit {
+  margin-bottom: 0.5em;
+}
+
+.song-wrapper .right-column .credits-wrapper .studio {
   margin-bottom: 1em;
 }
 

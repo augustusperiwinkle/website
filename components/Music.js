@@ -23,6 +23,7 @@ function Music(props) {
                   <div className="master-credit">
                     Music & Lyrics by Derek Louis
                   </div>
+                  <div className="studio">Recorded at {song.studio}</div>
                   {song.credits.map((credit) => {
                     return (
                       <div className="credit">
