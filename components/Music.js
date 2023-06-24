@@ -21,6 +21,9 @@ function Music(props) {
               </div>
               <div className="right-column">
                 <div className="credits-wrapper">
+                  <div className="release-date">
+                    Released {song.releaseDate}
+                  </div>
                   <div className="master-credit">
                     Music & Lyrics by Derek Louis
                   </div>
