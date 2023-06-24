@@ -78,7 +78,7 @@ function ColorLand(props) {
   }
 
   function generateRandomArrayIndex() {
-    let randomArrayIndex = Math.floor(Math.random() * 20);
+    let randomArrayIndex = Math.floor(Math.random() * 19);
 
     if (randomArrayIndex !== lastIndex) {
       return randomArrayIndex;

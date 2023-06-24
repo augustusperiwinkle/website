@@ -16,6 +16,7 @@ function Music(props) {
                 <img
                   src={song.albumArtPathname}
                   alt={`${song.songName} Artwork`}
+                  referrerpolicy="no-referrer"
                 />
               </div>
               <div className="right-column">

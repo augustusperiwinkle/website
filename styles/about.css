@@ -1,168 +1,41 @@
-#aboutContainer {
-  margin: 50px 0px 75px 0px;
-  width: 1050px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.about-wrapper {
+  font-size: 10px;
+  width: 80%;
+  margin: 3.6em 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.8em;
+  padding: 2.5em;
+  max-width: 750px;
 }
 
-#textAndImage {
-  margin: 0px 0px 50px 0px;
-  width: 100%;
-  max-width: 1000px;
-  display: flex;
+.about-wrapper p {
+  color: white;
+  font-size: 1.8em;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2em;
+  margin: 0;
 }
 
-#myPhoto {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  margin: 0px 75px 0px 0px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.aboutPageText {
-  margin: 0px 0px 0px 0px;
-  font-size: 18px;
-  line-height: 30px;
-  align-self: center;
-}
-
-#aboutTechTitle {
-  margin-bottom: 25px;
-  font-size: 32px;
-}
-
-#techContainer {
-  width: 100%;
-  max-width: 550px;
-  border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.051);
-  padding: 25px 0px 25px 0px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
-  transition-duration: 0.2s;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.techIconAbout {
-  width: 50px;
-  height: 50px;
-  margin: 25px;
-  transition-duration: 0.2s;
-}
-
-.techIconAbout:hover {
-  transform: scale(1.05);
-}
-
-#resume {
-  font-family: 'Roboto', sans-serif;
-  font-size: 32px;
-  font-weight: 300;
-  margin: 62px 0px 0px 0px;
-  transition-duration: 0.25s;
-  display: flex;
-  align-items: center;
-}
-
-#resume:hover {
-  color: #0670b2;
-}
-
-#pdfLogo {
-  font-size: 24px;
-  margin: 0px 15px 0px 0px;
-}
-
-@media (max-height: 700px) {
-  #techContainer {
-    max-width: 850px;
+@media (max-width: 660px) {
+  .about-wrapper {
+    font-size: 9px;
   }
 }
 
-@media (max-width: 1225px) {
-  #aboutContainer {
-    width: 800px;
-  }
-  #myPhoto {
-    margin: 0px 50px 0px 0px;
+@media (max-width: 575px) {
+  .about-wrapper {
+    font-size: 8px;
   }
 }
 
-@media (max-width: 950px) {
-  #aboutContainer {
-    width: 650px;
-    margin: 10px 0px 85px 0px;
-  }
-  #textAndImage {
-    flex-direction: column;
-  }
-  #myPhoto {
-    align-self: center;
-    margin: 0px 0px 36px 0px;
-  }
-  #aboutTechTitle {
-    margin: 0px 36px 25px 36px;
+@media (max-width: 425px) {
+  .about-wrapper {
+    margin: 2.5em 0 3.6em 0;
   }
 }
 
-@media (max-width: 850px) {
-  #aboutContainer {
-    width: 80%;
-  }
-}
-
-@media (max-width: 670px) {
-  .techIconAbout {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-@media (max-width: 600px) {
-  #textAndImage {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #myPhoto {
-    float: none;
-  }
-  .aboutPageText {
-    margin: 0px 0px 0px 0px;
-  }
-}
-
-@media (max-width: 580px) {
-  #aboutContainer {
-    margin: 10px 0px 60px 0px;
-  }
-  .techIconAbout {
-    margin: 20px;
-  }
-  #resume {
-    font-size: 28px;
-    margin: 45px 0px 0px 0px;
-  }
-  #pdfLogo {
-    font-size: 21px;
-  }
-}
-
-@media (max-width: 500px) {
-  #aboutTechTitle {
-    font-size: 27px;
-  }
-  #techContainer {
-    padding: 10px 0px 10px 0px;
-  }
-  .techIconAbout {
-    width: 30px;
-    height: 30px;
+@media (max-width: 380px) {
+  .about-wrapper {
+    margin: 1.5em 0 3.6em 0;
   }
 }
