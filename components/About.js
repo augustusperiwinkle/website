@@ -8,25 +8,17 @@ function About(props) {
     <div className="page-wrapper">
       <div className="about-wrapper">
         <p>
-          I'm baby single-origin coffee small batch forage sustainable,
-          scenester ethical gastropub hammock marfa fashion axe bicycle rights
-          PBR&B vice gentrify man braid. Cray blog DSA chillwave migas.
-          Slow-carb artisan YOLO bespoke vaporware, typewriter iPhone vape bruh
-          chillwave etsy leggings. Yr snackwave enamel pin raw denim cliche
-          mukbang. Food truck raclette chicharrones mlkshk. Bushwick meh
-          vexillologist, iceland artisan organic deep v roof party master
-          cleanse mukbang food truck you probably haven't heard of them
-          skateboard. Brunch kitsch meh, cold-pressed lyft trust fund irony
-          neutra.
+          Augustus Periwinkle's music is like a scrumptious smorgasborg, or a
+          fresh fruit smoothie, or a bountiful wildflower bouquet; made up of a
+          vibrant variety of flavors and colors, one thing is certain: you're
+          going to have a lot of fun.
           <br />
-          Cornhole ramps church-key sustainable truffaut, wolf lomo vibecession
-          authentic locavore farm-to-table kitsch williamsburg fam. Affogato
-          direct trade biodiesel, wayfarers hell of forage pickled tumeric
-          shaman. Swag selfies YOLO, iPhone butcher JOMO gastropub lumbersexual
-          man braid bushwick. Pork belly health goth unicorn big mood, bodega
-          boys chillwave hammock vaporware 3 wolf moon tofu shaman umami migas.
-          Yes plz lyft 3 wolf moon tacos fixie authentic, neutral milk hotel
-          austin glossier hammock franzen fam jianbing Brooklyn.
+          <br />
+          Based in New York City, Augustus Periwinkle had spent most of his life
+          touring around the world as a drummer in various bands and groups. Now
+          Augustus is completing his metamorphosis into singer, songwriter, and
+          producer. The result is a surprising and joyful mix of pop, funk,
+          indie rock, r&b, and anything else that sparks the imagination.
         </p>
       </div>
       <Footer />
