@@ -34,7 +34,7 @@ const musicData = [
   },
   {
     songName: 'Whittle My Life',
-    albumArtPathname: 'https://i.imgur.com/ode4AVy.jpg',
+    albumArtPathname: 'https://i.imgur.com/FPZUJVr.jpg',
     releaseDate: '6/7/23',
     studio: 'my apartment, Queens NY',
     spotifyLink:
