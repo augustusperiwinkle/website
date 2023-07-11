@@ -15,7 +15,7 @@ const musicData = [
   {
     songName: 'Hey! My Youth Is Back',
     albumArtPathname: 'https://i.imgur.com/YWUVHlH.jpg',
-    releaseDate: 'TBD',
+    releaseDate: '9/6/23',
     studio: 'Virtue And Vice, Brooklyn NY',
     spotifyLink: '',
     appleMusicLink: '',
@@ -28,7 +28,7 @@ const musicData = [
       ['John Cushing', 'Trombone'],
       ['Tree Palmedo', 'Trumpet'],
       ['Robin Buyer', 'Mixing Engineer'],
-      ['TBD', 'Mastering Engineer'],
+      ['Joe Lambert', 'Mastering Engineer'],
       ['Erica Erica', 'Artwork'],
     ],
   },
