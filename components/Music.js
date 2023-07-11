@@ -22,7 +22,9 @@ function Music(props) {
               <div className="right-column">
                 <div className="credits-wrapper">
                   <div className="release-date">
-                    Released {song.releaseDate}
+                    {!song.preSaveLink
+                      ? `Released ${song.releaseDate}`
+                      : `Release Date ${song.releaseDate}`}
                   </div>
                   <div className="master-credit">
                     Music & Lyrics by Derek Louis
@@ -36,43 +38,53 @@ function Music(props) {
                     );
                   })}
                 </div>
-                <div className="links-wrapper">
+                {!song.preSaveLink ? (
+                  <div className="links-wrapper">
+                    <a
+                      href={song.spotifyLink}
+                      target="_blank"
+                      className="song-link-anchor"
+                    >
+                      <i className="fab fa-spotify song-link-icon"></i>
+                    </a>
+                    <a
+                      href={song.appleMusicLink}
+                      target="_blank"
+                      className="song-link-anchor"
+                    >
+                      <i className="fab fa-apple song-link-icon"></i>
+                    </a>
+                    <a
+                      href={song.youTubeLink}
+                      target="_blank"
+                      className="song-link-anchor"
+                    >
+                      <i className="fab fa-youtube song-link-icon"></i>
+                    </a>
+                    <a
+                      href={song.soundCloudLink}
+                      target="_blank"
+                      className="song-link-anchor"
+                    >
+                      <i className="fab fa-soundcloud song-link-icon"></i>
+                    </a>
+                    <a
+                      href={song.amazonMusicLink}
+                      target="_blank"
+                      className="song-link-anchor"
+                    >
+                      <i className="fab fa-amazon song-link-icon"></i>
+                    </a>
+                  </div>
+                ) : (
                   <a
-                    href={song.spotifyLink}
+                    href={song.preSaveLink}
                     target="_blank"
-                    className="song-link-anchor"
+                    className="pre-save-button"
                   >
-                    <i className="fab fa-spotify song-link-icon"></i>
+                    Pre-Save
                   </a>
-                  <a
-                    href={song.appleMusicLink}
-                    target="_blank"
-                    className="song-link-anchor"
-                  >
-                    <i className="fab fa-apple song-link-icon"></i>
-                  </a>
-                  <a
-                    href={song.youTubeLink}
-                    target="_blank"
-                    className="song-link-anchor"
-                  >
-                    <i className="fab fa-youtube song-link-icon"></i>
-                  </a>
-                  <a
-                    href={song.soundCloudLink}
-                    target="_blank"
-                    className="song-link-anchor"
-                  >
-                    <i className="fab fa-soundcloud song-link-icon"></i>
-                  </a>
-                  <a
-                    href={song.amazonMusicLink}
-                    target="_blank"
-                    className="song-link-anchor"
-                  >
-                    <i className="fab fa-amazon song-link-icon"></i>
-                  </a>
-                </div>
+                )}
               </div>
             </div>
           );

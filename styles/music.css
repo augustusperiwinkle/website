@@ -79,17 +79,35 @@
   transition-duration: 0.3s;
 }
 
-.song-wrapper .right-column .links-wrapper .song-link-anchor:active {
-  color: #f96d3c;
-}
-
 .song-wrapper .right-column .links-wrapper .song-link-icon {
   font-size: 5em;
   color: inherit;
 }
 
+.song-wrapper .right-column .pre-save-button {
+  font-size: 2em;
+  height: 3.75em;
+  width: 12em;
+  border-radius: 2em;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #fd8d67;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+
+.song-wrapper .right-column .links-wrapper .song-link-anchor:active,
+.song-wrapper .right-column .pre-save-button:active {
+  color: #f96d3c;
+}
+
 @media (hover: hover) {
-  .song-wrapper .right-column .links-wrapper .song-link-anchor:hover {
+  .song-wrapper .right-column .links-wrapper .song-link-anchor:hover,
+  .song-wrapper .right-column .pre-save-button:hover {
     color: #f96d3c;
   }
 }
