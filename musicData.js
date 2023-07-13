@@ -30,7 +30,7 @@ const musicData = [
       ['Eddie Torres', 'Percussion'],
       ['John Cushing', 'Trombone'],
       ['Tree Palmedo', 'Trumpet'],
-      ['Robin Buyer', 'Mixing Engineer'],
+      ['Robin Buyer', 'Recording Engineer, Mixing Engineer'],
       ['Joe Lambert', 'Mastering Engineer'],
       ['Erica Erica', 'Artwork'],
     ],
