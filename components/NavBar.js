@@ -28,24 +28,22 @@ function NavBar() {
   }
 
   useEffect(() => {
-    window.addEventListener('resize', function () {
-      handleResize();
-    });
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener('resize', function () {
-        handleResize();
-      });
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
-  function handleResize() {
-    if (window.innerWidth > 750) {
-      slideMenu.current.className = 'menuHidden';
-    } else if (window.innerWidth <= 750 && menuOpen) {
-      slideMenu.current.className = 'slideIn';
+  const handleResize = () => {
+    if (slideMenu.current) {
+      if (window.innerWidth > 750) {
+        slideMenu.current.className = 'menuHidden';
+      } else if (window.innerWidth <= 750 && menuOpen) {
+        slideMenu.current.className = 'slideIn';
+      }
     }
-  }
+  };
 
   return (
     <>
