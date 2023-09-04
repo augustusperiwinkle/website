@@ -45,35 +45,35 @@ function Music(props) {
                       target="_blank"
                       className="song-link-anchor"
                     >
-                      <i className="fab fa-spotify song-link-icon"></i>
+                      <i className="fab fa-spotify song-link-icon" />
                     </a>
                     <a
                       href={song.appleMusicLink}
                       target="_blank"
                       className="song-link-anchor"
                     >
-                      <i className="fab fa-apple song-link-icon"></i>
+                      <i className="fab fa-apple song-link-icon" />
                     </a>
                     <a
                       href={song.youTubeLink}
                       target="_blank"
                       className="song-link-anchor"
                     >
-                      <i className="fab fa-youtube song-link-icon"></i>
+                      <i className="fab fa-youtube song-link-icon" />
                     </a>
                     <a
                       href={song.soundCloudLink}
                       target="_blank"
                       className="song-link-anchor"
                     >
-                      <i className="fab fa-soundcloud song-link-icon"></i>
+                      <i className="fab fa-soundcloud song-link-icon" />
                     </a>
                     <a
                       href={song.amazonMusicLink}
                       target="_blank"
                       className="song-link-anchor"
                     >
-                      <i className="fab fa-amazon song-link-icon"></i>
+                      <i className="fab fa-amazon song-link-icon" />
                     </a>
                   </div>
                 ) : (

@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   font-size: 10px;
-  margin: 3.6em 0;
+  margin: 3.6em 0 6em 0;
   gap: 2.5em;
   font-family: 'Open Sans', sans-serif;
   color: white;
@@ -181,6 +181,7 @@
 @media (max-width: 460px) {
   #music-wrapper {
     font-size: 6px;
+    margin: 3.6em 0 10em 0;
   }
 }
 

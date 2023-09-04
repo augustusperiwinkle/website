@@ -44,3 +44,13 @@
     font-size: 30px;
   }
 }
+
+@media (max-width: 400px) {
+  .footerIcon {
+    font-size: 25px;
+  }
+
+  .iconAnchor {
+    margin: 0px 30px;
+  }
+}

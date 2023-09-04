@@ -6,7 +6,7 @@ import '../styles/about.css';
 function About(props) {
   return (
     <div className="page-wrapper">
-      <div className="about-wrapper">
+      <div id="about-wrapper">
         <img
           src="https://i.imgur.com/sGZ0D2k.jpg"
           referrerpolicy="no-referrer"
