@@ -14,17 +14,19 @@ const musicDataTemplate = {
 
 const musicData = [
   {
-    preSaveLink:
-      'https://distrokid.com/hyperfollow/augustusperiwinkle/hey-my-youth-is-back',
     songName: 'Hey! My Youth Is Back',
     albumArtPathname: 'https://i.imgur.com/YWUVHlH.jpg',
     releaseDate: '9/6/23',
     studio: 'Virtue And Vice, Brooklyn NY',
-    spotifyLink: '',
-    appleMusicLink: '',
-    youTubeLink: '',
-    soundCloudLink: '',
-    amazonMusicLink: '',
+    spotifyLink:
+      'https://open.spotify.com/track/6jLFRZg79SQM5LF2zz5Wxy?si=00b14bd9c2ef413d',
+    appleMusicLink:
+      'https://music.apple.com/us/album/hey-my-youth-is-back/1697027068?i=1697027070',
+    youTubeLink: 'https://www.youtube.com/watch?v=f4hEaV_xgt4',
+    soundCloudLink:
+      'https://soundcloud.com/augustus-periwinkle/hey-my-youth-is-back?si=f2cf70eca2f1415792128344bc4b26de&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+    amazonMusicLink:
+      'https://music.amazon.de/albums/B0CBNJD83C?marketplaceId=A1PA6795UKMFR9&musicTerritory=DE&ref=dm_sh_SPdW2meq3oXuWO7uxOoNFLzp1&trackAsin=B0CBNJ67R3',
     credits: [
       ['Derek Louis', 'Vocals, Drum Set, Percussion, Guitar, Synth'],
       ['Eddie Torres', 'Percussion'],
