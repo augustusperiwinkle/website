@@ -1,9 +1,8 @@
-import React from 'react';
 import Footer from './Footer';
 import Credit from './Credit';
 import '../styles/about.css';
 
-function About(props) {
+export default function About() {
   return (
     <div className="page-wrapper">
       <div id="about-wrapper">
@@ -35,5 +34,3 @@ function About(props) {
     </div>
   );
 }
-
-export default About;

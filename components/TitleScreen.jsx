@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
 import '../styles/title-screen.css';
 
-function TitleScreen(props) {
+export default function TitleScreen() {
   const history = useHistory();
 
   const TL1 = useRef(null);
@@ -132,5 +132,3 @@ function TitleScreen(props) {
     </div>
   );
 }
-
-export default TitleScreen;

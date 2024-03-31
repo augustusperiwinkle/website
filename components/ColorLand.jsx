@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import { colorsArray } from '../colors.js';
 import '../styles/color-land.css';
 
 let lastIndex = null;
 
-function ColorLand(props) {
+export default function ColorLand() {
   const history = useHistory();
   const location = useLocation();
 
@@ -120,5 +120,3 @@ function ColorLand(props) {
 
   return <canvas id="color-land-canvas" />;
 }
-
-export default ColorLand;

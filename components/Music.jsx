@@ -1,10 +1,9 @@
-import React from 'react';
 import Footer from './Footer';
 import Credit from './Credit';
 import '../styles/music.css';
 import musicData from '../musicData';
 
-function Music() {
+export default function Music() {
   return (
     <div className="page-wrapper">
       <div id="music-wrapper">
@@ -95,5 +94,3 @@ function Music() {
     </div>
   );
 }
-
-export default Music;

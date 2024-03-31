@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import SlideMenu from './SlideMenu';
 import '../styles/nav-bar.css';
 
 let menuOpen = false;
 
-function NavBar() {
+export default function NavBar() {
   const menuBtn = useRef(null);
   const slideMenu = useRef(null);
 
@@ -76,5 +76,3 @@ function NavBar() {
     </>
   );
 }
-
-export default NavBar;

@@ -1,8 +1,7 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/slide-menu.css';
 
-function SlideMenu(props) {
+export default function SlideMenu(props) {
   return (
     <div id="slideMenuWrapper" className="menuHidden" ref={props.slideMenuRef}>
       <div id="SMLinkBox">
@@ -19,5 +18,3 @@ function SlideMenu(props) {
     </div>
   );
 }
-
-export default SlideMenu;

@@ -1,7 +1,6 @@
-import React from 'react';
 import '../styles/footer.css';
 
-function Footer() {
+export default function Footer() {
   return (
     <div id="footerContainer">
       <a
@@ -35,5 +34,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;
