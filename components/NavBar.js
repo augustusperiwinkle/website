@@ -65,6 +65,9 @@ function NavBar() {
           <Link className="nav-item" to="/music">
             <p>Music</p>
           </Link>
+          <Link className="nav-item" to="/collectibles">
+            <p>Collectibles</p>
+          </Link>
           <Link className="nav-item" to="/about">
             <p>About</p>
           </Link>

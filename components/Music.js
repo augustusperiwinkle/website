@@ -4,7 +4,7 @@ import Credit from './Credit';
 import '../styles/music.css';
 import musicData from '../musicData';
 
-function Music(props) {
+function Music() {
   return (
     <div className="page-wrapper">
       <div id="music-wrapper">

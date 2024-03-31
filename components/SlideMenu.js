@@ -9,6 +9,9 @@ function SlideMenu(props) {
         <Link className="SMLink" to="/music" onClick={props.closeMenu}>
           <p className="SMItem">Music</p>
         </Link>
+        <Link className="SMLink" to="/collectibles" onClick={props.closeMenu}>
+          <p className="SMItem">Collectibles</p>
+        </Link>
         <Link className="SMLink" to="/about" onClick={props.closeMenu}>
           <p className="SMItem">About</p>
         </Link>
