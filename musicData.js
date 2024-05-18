@@ -14,6 +14,29 @@ const musicDataTemplate = {
 
 const musicData = [
   {
+    songName: 'Little Voice',
+    albumArtPathname: 'https://i.imgur.com/GAzeyhP.jpg',
+    releaseDate: '5/16/24',
+    studio: 'Virtue And Vice, Brooklyn NY',
+    spotifyLink: 'https://open.spotify.com/artist/07qpp9gPZKocgiJEuwK299',
+    appleMusicLink:
+      'https://music.apple.com/us/artist/augustus-periwinkle/1689510753',
+    youTubeLink: 'https://www.youtube.com/watch?v=9qUGcdlzP9Q',
+    soundCloudLink:
+      'https://soundcloud.com/augustus-periwinkle/little-voice?si=fef63619e5c448219c325d82423fee16&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+    amazonMusicLink:
+      'https://music.amazon.de/albums/B0D3D71YS4?marketplaceId=A1PA6795UKMFR9&musicTerritory=DE&ref=dm_sh_1XnhPyZilgrdSie64D4YdSqtg',
+    credits: [
+      ['Derek Louis', 'Vocals, Drum Set, Guitar, Synth, Percussion'],
+      ['David DePrest', 'Guitar'],
+      ['Utsav Lal', 'Wurlitzer', 'Synth'],
+      ['Dylan Sherry', 'Flute'],
+      ['Robin Buyer', 'Recording Engineer, Mixing Engineer, Bass'],
+      ['Chris Gehringer', 'Mastering Engineer'],
+      ['Holly Getty', 'Artwork'],
+    ],
+  },
+  {
     songName: 'Hey! My Youth Is Back',
     albumArtPathname: 'https://i.imgur.com/YWUVHlH.jpg',
     releaseDate: '9/6/23',

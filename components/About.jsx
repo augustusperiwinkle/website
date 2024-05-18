@@ -7,7 +7,7 @@ export default function About() {
     <div className="page-wrapper">
       <div id="about-wrapper">
         <img
-          src="https://i.imgur.com/sGZ0D2k.jpg"
+          src="https://i.imgur.com/RbCQMMI.png"
           referrerpolicy="no-referrer"
           id="about-image"
           alt="Augustus Periwinkle Profile Picture"
