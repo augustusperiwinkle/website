@@ -14,7 +14,7 @@ export default function About() {
         />
         <div className="text-wrapper">
           <p>
-            Augustus Periwinkle's music is like a scrumptious smorgasborg, or a
+            Augustus Periwinkle's music is like a scrumptious smörgåsbord, or a
             fresh fruit smoothie, or a bountiful wildflower bouquet; made up of
             a vibrant variety of flavors and colors, one thing is certain:
             you're going to have a lot of fun.
